@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E2C874D0-FD2B-567C-5054-F9F00102AC8E" name="Docentes">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 16:35:49 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idDocente" id="F0B2C168-8062-7E1B-5EF1-31720723879C">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 16:38:43 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="417A4C69-5F15-023C-4179-180B0F94789F">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 16:38:43 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellido" id="3FEB4A64-B04E-D162-142E-B5E9A30EC147">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 16:51:58 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario" id="57A67436-E1AC-B26F-61FA-0D1DEF134D8F">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 16:51:58 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="correo_electronico" id="171C5A4B-1DEF-C072-86BE-F42779F542F9">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 16:38:43 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="password" id="1C16FA6F-E8E5-BC09-CA10-31A171DF2E25">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 16:51:58 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="6F5FA1EA-549B-ED2A-B011-40E8BB2D6190">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 16:38:43 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccion" id="460F4029-4B75-6C42-C3FF-51420F3A8849">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 16:51:58 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="idInstitucion" id="C5015ACB-8773-0236-B380-E64D3ADCC22C">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 18:16:16 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="31333FC0-4820-943E-EEF3-EF9F9EEB8E4D" referredColumn="44BF2CAB-0655-FD37-331E-181C7230B28C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="270FC12E-5A8F-84DE-AB54-FC20F36776A7" name="Docentes_PK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 16:38:43 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F0B2C168-8062-7E1B-5EF1-31720723879C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7DDD4F6F-6300-BF27-C875-BC5A84D26FBA" name="Docentes_Instituciones_FK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 18:16:16 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C5015ACB-8773-0236-B380-E64D3ADCC22C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

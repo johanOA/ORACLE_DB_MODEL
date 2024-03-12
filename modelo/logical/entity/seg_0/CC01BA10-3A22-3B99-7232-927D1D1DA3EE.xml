@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CC01BA10-3A22-3B99-7232-927D1D1DA3EE" name="Cursos">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:16:17 UTC</createdTime>
+<generatorID>8EA0DC9E-341F-A6FD-B1A3-DC436571ED6C</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5601221A-4745-6473-79D8-9DDFB435920E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idCurso" id="0A770F6F-0475-B118-C3B5-BB5109ED6054">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:16:17 UTC</createdTime>
+<generatorID>F510357E-CD95-9A48-1254-5721AA56D6C7</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5601221A-4745-6473-79D8-9DDFB435920E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombrecurso" id="2ECF48AB-1AE5-7795-797D-0D4B3E22D638">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:16:17 UTC</createdTime>
+<generatorID>D672EFDB-1B95-CB15-D281-95ABD7898A14</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5601221A-4745-6473-79D8-9DDFB435920E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descripcion" id="836887EB-A879-542E-3146-0F446BB09935">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:16:17 UTC</createdTime>
+<generatorID>3CC4BB34-D0FC-AECC-9FD1-7831D3D24421</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5601221A-4745-6473-79D8-9DDFB435920E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9E2A4BE9-6210-8095-C768-95AB222795DB" name="Cursos PK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:16:17 UTC</createdTime>
+<generatorID>96963319-D51E-ADC6-2F12-8A4FF8BEB964</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5601221A-4745-6473-79D8-9DDFB435920E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0A770F6F-0475-B118-C3B5-BB5109ED6054</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

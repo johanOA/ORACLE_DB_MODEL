@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="7D3E2F74-F6AE-EC4F-BE83-3C6C5A549F4C" mainViewID="58460C5B-DD42-DC48-BA01-009C56236E86">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 16:20:42 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

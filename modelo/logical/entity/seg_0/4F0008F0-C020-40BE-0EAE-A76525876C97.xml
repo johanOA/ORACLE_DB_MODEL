@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4F0008F0-C020-40BE-0EAE-A76525876C97" name="Instituciones">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:16:17 UTC</createdTime>
+<generatorID>239A6713-F3C9-4C8D-14F4-9066A5BA2C60</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5601221A-4745-6473-79D8-9DDFB435920E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idInstitucion" id="1CFDD6A0-6159-75D6-C126-214EDE121881">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:16:17 UTC</createdTime>
+<generatorID>44BF2CAB-0655-FD37-331E-181C7230B28C</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5601221A-4745-6473-79D8-9DDFB435920E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombreninstitucion" id="0E999CE7-8598-C8B4-85A8-CF5C2F98D55B">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:16:17 UTC</createdTime>
+<generatorID>8C322B1E-33EA-867C-B1DB-01ED1844ED76</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5601221A-4745-6473-79D8-9DDFB435920E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descripcion" id="12258639-A91F-8845-1F2A-2710FA2C8183">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:16:17 UTC</createdTime>
+<generatorID>E20B78F3-2194-B102-8730-5739C9D41A5B</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5601221A-4745-6473-79D8-9DDFB435920E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="direccion" id="43ED75A6-A1FC-D41A-D372-E3E306D69D1A">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:16:17 UTC</createdTime>
+<generatorID>0FE4922E-DFDF-59A5-F95B-B406868330DE</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5601221A-4745-6473-79D8-9DDFB435920E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefono" id="ACD83F77-3A22-2873-628A-F2BC120838B1">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:16:17 UTC</createdTime>
+<generatorID>EF577F32-0C99-3685-6EB1-D2CEE1755BF5</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5601221A-4745-6473-79D8-9DDFB435920E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CF258E78-39A5-4DD7-720B-1BC0F4BF1614" name="Instituciones PK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:16:17 UTC</createdTime>
+<generatorID>8BD90F78-D0EE-BBF2-FACC-44E02A4425DD</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5601221A-4745-6473-79D8-9DDFB435920E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1CFDD6A0-6159-75D6-C126-214EDE121881</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FBB85421-370E-A379-9A9C-72EB2FC3CE96" name="Respuestas">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:50:13 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idRespuestas" id="AA57CA72-AABE-A5DF-65C7-AE4D47A3BE9A">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:55:59 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="opcionrespuesta" id="FDAF9EBA-27BF-667D-1443-4F6828216FED">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:57:11 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="correcta" id="61DCF4C8-AA2C-DE6A-41DF-27A8E2E56A4C">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:55:59 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="idPreguntas" id="AA83BA73-DAB9-E385-1ABB-C04EC702E576">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 18:00:16 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="002C663E-F92F-1785-06B8-5E9A448ADF5A" referredColumn="131FD629-C0C4-3D31-D15F-9ABAF0BD953D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F03FA9AA-8A4C-CC4D-F475-18A9E08B8311" name="Respuestas_PK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:55:59 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA57CA72-AABE-A5DF-65C7-AE4D47A3BE9A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="889A997C-5FAF-83F6-444F-B5718CDD7BAC" name="Respuestas_Preguntas_FK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 18:00:16 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA83BA73-DAB9-E385-1ABB-C04EC702E576"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

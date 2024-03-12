@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="345DA448-420D-90AF-494F-FD8B7F18CCDF" containerWithKeyObject="65618E42-2891-8018-FE55-83E41DB98A46" localFKIndex="CD6CE08B-3F4B-CCA1-F8CF-E2A1C03C9AEC" name="Preguntas_Estados_FK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 18:48:45 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<referredTableLongName>Estados</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C9630A56-6BFD-DE05-DD43-3B4FFE6089E0</referredTableID>
+<keyObject>4145A63E-9616-9949-8DFF-995B853F6D2C</keyObject>
+<referredKeyID>4145A63E-9616-9949-8DFF-995B853F6D2C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idEstado</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

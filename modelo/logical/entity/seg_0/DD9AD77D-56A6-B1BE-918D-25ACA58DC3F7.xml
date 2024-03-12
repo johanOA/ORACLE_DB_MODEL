@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DD9AD77D-56A6-B1BE-918D-25ACA58DC3F7" name="Grupos">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:16:17 UTC</createdTime>
+<generatorID>2ED4668F-A904-0707-20F8-8EE89F9A9D5B</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5601221A-4745-6473-79D8-9DDFB435920E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idGrupo" id="E6997FC6-7307-55EF-1620-C33A5A325981">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:16:17 UTC</createdTime>
+<generatorID>FA2041A2-D5F1-62E1-FCC8-2E1540FEFD38</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5601221A-4745-6473-79D8-9DDFB435920E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombregrupo" id="36237403-A03C-3C2E-8D21-1D4917255FA2">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:16:17 UTC</createdTime>
+<generatorID>4BF4215F-9301-3CD2-DC98-056CA33A3D17</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5601221A-4745-6473-79D8-9DDFB435920E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="añoacatemico" id="D861815D-A027-1779-6696-EBA82802091B">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:16:17 UTC</createdTime>
+<generatorID>2158C8D0-3013-E7E5-2059-30E5784DBCF5</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5601221A-4745-6473-79D8-9DDFB435920E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6D765E5F-0CEB-AA0F-DE36-39F1E98857C5" name="Grupos PK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:16:17 UTC</createdTime>
+<generatorID>39E44D83-86D1-3BE9-5BA6-7A436C2A4EC2</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5601221A-4745-6473-79D8-9DDFB435920E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E6997FC6-7307-55EF-1620-C33A5A325981</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

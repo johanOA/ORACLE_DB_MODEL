@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="71AACD94-41B2-7509-EF7D-DDBBA3BA6ECB" name="temas_examenes">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 18:32:06 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<ordsAlias>table_12</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idtema_examen" id="213A06D5-BB17-B07A-3035-50AB9B3675A6">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 18:33:34 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="idExamenes" id="B7C6EFA9-B3C1-CD51-7265-70D96D117663">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 18:33:58 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B807946B-2357-D9DF-7066-47B7FB48F51F" referredColumn="20F0FC1C-5996-F82B-F32A-917704BCE931"/>
+</associations>
+</Column>
+<Column name="idTema" id="9E419A51-4224-92D8-865C-30CA6B67313A">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 18:34:25 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E04AEFAC-6D49-A6CE-8E19-033D241FAEBD" referredColumn="8F223DB7-1271-7AFB-5A4B-743C2C091E7F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="57535C39-687C-2E39-BFBB-D54175039EC7" name="temas_examenes_PK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 18:33:34 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="213A06D5-BB17-B07A-3035-50AB9B3675A6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ABEFFAE9-6865-0AD0-7775-435485D161BA" name="temas_examenes_Examenes_FK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 18:33:58 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B7C6EFA9-B3C1-CD51-7265-70D96D117663"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="103609FC-A862-1329-AA13-13473A1A0B0D" name="temas_examenes_Temas_FK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 18:34:25 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E419A51-4224-92D8-865C-30CA6B67313A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

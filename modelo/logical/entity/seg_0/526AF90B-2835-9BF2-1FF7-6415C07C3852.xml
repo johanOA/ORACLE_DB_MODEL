@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="526AF90B-2835-9BF2-1FF7-6415C07C3852" name="Estudiantes">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:16:17 UTC</createdTime>
+<generatorID>5666C6F0-3597-D130-56CA-A1EC4BD67FB5</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5601221A-4745-6473-79D8-9DDFB435920E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idEstudiante" id="A4093913-E6EB-7118-1F3B-27CE165DFEBE">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:16:17 UTC</createdTime>
+<generatorID>0801D3A5-4D04-2984-950B-0F5D04AAFF4E</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5601221A-4745-6473-79D8-9DDFB435920E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="61C618E1-8280-74E8-7C1B-D7D206385ABE">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:16:17 UTC</createdTime>
+<generatorID>AE3EF5E3-45CE-0DFF-6970-3D5B37807506</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5601221A-4745-6473-79D8-9DDFB435920E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="apellido" id="BE21F5A8-695C-B888-E953-DA84015ACF33">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:16:17 UTC</createdTime>
+<generatorID>3E97A8EA-2621-7E54-4192-FA171E7BFA5C</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5601221A-4745-6473-79D8-9DDFB435920E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="usuario" id="C13AD065-A79B-06D0-DFC6-1A2EFA118958">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:16:17 UTC</createdTime>
+<generatorID>D9AF8E6D-DFDE-1292-643F-18EAFC2558D8</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5601221A-4745-6473-79D8-9DDFB435920E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="correo electronico" id="C554F14E-AF87-E0BB-36A8-DDEE28C26A10">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:16:17 UTC</createdTime>
+<generatorID>90F6F0D9-27CF-3E60-26D7-B89348E6F404</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5601221A-4745-6473-79D8-9DDFB435920E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="password" id="DCDB8CD5-5D65-2566-A309-A37FA4604CAC">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:16:17 UTC</createdTime>
+<generatorID>0EAB9CAB-75BB-A2FE-4E34-E65CB9B5A21C</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5601221A-4745-6473-79D8-9DDFB435920E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefono" id="4DDE9C0A-94F8-5E40-0C33-CB80E327D4E5">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:16:17 UTC</createdTime>
+<generatorID>91DA427A-3562-91BB-91C1-BFDE002C10C2</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5601221A-4745-6473-79D8-9DDFB435920E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="158E0ABC-9EDD-3CD7-685B-3C4A6A0F5CAD" name="Estudiantes PK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:16:17 UTC</createdTime>
+<generatorID>E0678891-8E81-900C-7243-981B8668F13C</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5601221A-4745-6473-79D8-9DDFB435920E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A4093913-E6EB-7118-1F3B-27CE165DFEBE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

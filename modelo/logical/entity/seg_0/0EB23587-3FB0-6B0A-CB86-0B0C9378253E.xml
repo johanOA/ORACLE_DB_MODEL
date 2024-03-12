@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0EB23587-3FB0-6B0A-CB86-0B0C9378253E" name="TiposExamenes">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:16:17 UTC</createdTime>
+<generatorID>314FD409-D5B1-1A87-13A4-E162DC70A980</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5601221A-4745-6473-79D8-9DDFB435920E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idTipoexamen" id="2981E198-1F60-3CC1-DA8A-D43DD88D392F">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:16:17 UTC</createdTime>
+<generatorID>33899ED9-900D-1515-8724-9A903A9C13B2</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5601221A-4745-6473-79D8-9DDFB435920E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descripcion" id="D7C6D748-4271-508A-C69C-4940BB717D6F">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:16:17 UTC</createdTime>
+<generatorID>F92D7805-861C-56AC-B294-44D0C6548B34</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5601221A-4745-6473-79D8-9DDFB435920E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8EDEBCA9-8017-D45D-7A6C-D828D8888D5A" name="TiposExamenes PK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:16:17 UTC</createdTime>
+<generatorID>81FDC9D1-0636-F2C1-B23B-B29BA7B95E26</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="5601221A-4745-6473-79D8-9DDFB435920E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2981E198-1F60-3CC1-DA8A-D43DD88D392F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

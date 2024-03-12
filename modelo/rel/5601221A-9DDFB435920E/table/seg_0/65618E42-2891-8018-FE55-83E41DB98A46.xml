@@ -1,0 +1,162 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="65618E42-2891-8018-FE55-83E41DB98A46" name="Preguntas">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:12:50 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idPreguntas" id="131FD629-C0C4-3D31-D15F-9ABAF0BD953D">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:15:50 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="enunciado" id="F42E4032-D7A7-AD8D-4D50-0CF397A6309B">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:46:00 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="idExamenes" id="29D9EC0F-774B-FC32-9FD2-94B3D1582392">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:59:20 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="48ED3B36-9B60-8ED8-0812-46BCCFBFABB8" referredColumn="20F0FC1C-5996-F82B-F32A-917704BCE931"/>
+</associations>
+</Column>
+<Column name="idTipoPregunta" id="9ECBA269-7F0B-DDE9-4F04-96388B4487CA">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 18:07:12 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EF8CA47C-D2CD-23DD-2C95-F0D63013DC7C" referredColumn="B21647AD-395F-22DD-A7EE-02BF1B4A27C6"/>
+</associations>
+</Column>
+<Column name="idTema" id="B192AA8F-97A6-83CB-6E5F-337B71E2EA0A">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 18:42:09 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6EBF08FC-4947-E42D-C39B-2B1D5A5E599E" referredColumn="8F223DB7-1271-7AFB-5A4B-743C2C091E7F"/>
+</associations>
+</Column>
+<Column name="idEstado" id="3594F6E9-1637-6DFD-F730-3E4BDF003DC5">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 18:48:45 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="345DA448-420D-90AF-494F-FD8B7F18CCDF" referredColumn="E4F1EE45-06AE-23EA-DFC6-D197EABA5659"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="85F64DBF-570E-3F25-6ECA-87AB4E097AC8" name="Preguntas_PK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:15:50 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="131FD629-C0C4-3D31-D15F-9ABAF0BD953D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7F418C90-922A-33A4-A5F5-2438FC88E497" name="Preguntas_id_tipo_IDXv1">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 18:14:10 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9ECBA269-7F0B-DDE9-4F04-96388B4487CA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="47548970-F4B6-DC63-0751-E92D5AEF5AAD" name="Preguntas_id_estado_IDX">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 18:49:20 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3594F6E9-1637-6DFD-F730-3E4BDF003DC5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0A9876DF-04D8-4812-B363-FB670C97FFBE" name="Preguntas_Examenes_FK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 17:59:20 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="29D9EC0F-774B-FC32-9FD2-94B3D1582392"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0AEFF098-847D-CC01-179A-02D992358C38" name="Preguntas_TiposPreguntas_FK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 18:07:12 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9ECBA269-7F0B-DDE9-4F04-96388B4487CA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CF19128A-DA14-290F-1880-7E08ABA16C99" name="Preguntas_Temas_FK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 18:42:09 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B192AA8F-97A6-83CB-6E5F-337B71E2EA0A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CD6CE08B-3F4B-CCA1-F8CF-E2A1C03C9AEC" name="Preguntas_Estados_FK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-08 18:48:45 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3594F6E9-1637-6DFD-F730-3E4BDF003DC5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
