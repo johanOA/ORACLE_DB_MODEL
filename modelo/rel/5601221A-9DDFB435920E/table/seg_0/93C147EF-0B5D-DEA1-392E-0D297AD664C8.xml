@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2ED4668F-A904-0707-20F8-8EE89F9A9D5B" name="Grupos">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="93C147EF-0B5D-DEA1-392E-0D297AD664C8" name="Contenidos">
 <createdBy>ospin</createdBy>
-<createdTime>2024-03-08 16:57:06 UTC</createdTime>
+<createdTime>2024-03-13 15:18:49 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
-<ordsAlias>table_6</ordsAlias>
+<ordsAlias>table_18</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="idGrupo" id="FA2041A2-D5F1-62E1-FCC8-2E1540FEFD38">
+<Column name="idContenido" id="2CB9C5A1-6903-0E41-DD5D-62CEE6AC3804">
 <createdBy>ospin</createdBy>
-<createdTime>2024-03-08 16:59:20 UTC</createdTime>
+<createdTime>2024-03-13 15:19:53 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -18,9 +18,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="nombregrupo" id="4BF4215F-9301-3CD2-DC98-056CA33A3D17">
+<Column name="descricontenido" id="D557682C-10ED-BEBA-93BB-FE6D767FB007">
 <createdBy>ospin</createdBy>
-<createdTime>2024-03-08 16:59:20 UTC</createdTime>
+<createdTime>2024-03-13 15:19:53 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -29,19 +29,9 @@
 <ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="añoacatemico" id="2158C8D0-3013-E7E5-2059-30E5784DBCF5">
+<Column name="idUnidad" id="D43C515B-AD94-A4C1-EEC8-4054AE401AC3">
 <createdBy>ospin</createdBy>
-<createdTime>2024-03-08 16:59:20 UTC</createdTime>
-<ownerDesignName>modelo</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="idDocente_tutor" id="76242CDD-1042-1710-3366-3607EBAD6706">
-<createdBy>ospin</createdBy>
-<createdTime>2024-03-13 15:35:26 UTC</createdTime>
+<createdTime>2024-03-13 15:20:13 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -50,30 +40,30 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="B87A3E07-3D14-9CDD-EB68-E752320941E1" referredColumn="F0B2C168-8062-7E1B-5EF1-31720723879C"/>
+<colAssociation fkAssociation="67949AC3-4A04-2805-9BDF-8C47BCCB0940" referredColumn="27FC1E5B-0042-2612-AD88-337D95CE2BDE"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="39E44D83-86D1-3BE9-5BA6-7A436C2A4EC2" name="Grupos_PK">
+<ind_PK_UK id="34EEC600-EA09-9890-9FD5-46C49F2E5499" name="Contenidos_PK">
 <createdBy>ospin</createdBy>
-<createdTime>2024-03-08 16:59:20 UTC</createdTime>
+<createdTime>2024-03-13 15:19:53 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="FA2041A2-D5F1-62E1-FCC8-2E1540FEFD38"/>
+<colUsage columnID="2CB9C5A1-6903-0E41-DD5D-62CEE6AC3804"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="CFC8F146-9657-D816-81EA-D51D5F341A7A" name="Grupos_Docentes_FK">
+<ind_PK_UK id="19CD4362-A00D-A66B-3B66-DEE2679B5B6A" name="Contenidos_UnidadesEstudio_FK">
 <createdBy>ospin</createdBy>
-<createdTime>2024-03-13 15:35:26 UTC</createdTime>
+<createdTime>2024-03-13 15:20:13 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="76242CDD-1042-1710-3366-3607EBAD6706"/>
+<colUsage columnID="D43C515B-AD94-A4C1-EEC8-4054AE401AC3"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

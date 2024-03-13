@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2A7DF0FE-E1D8-A8A3-1FB9-5DA4C8F290AC" containerWithKeyObject="9FC03A7E-4353-87AE-8473-C6ADDA82E8A3" localFKIndex="5DC17F70-EB33-C372-AD02-02FD3780700F" name="Asignaciones_Estudiantes_Examenes_FK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-13 15:05:47 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<referredTableLongName>Examenes</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>51CF0E54-85F0-A733-2E41-865F61E0441C</referredTableID>
+<keyObject>40EC9C08-8213-F503-F5B5-A4F0AA7CE044</keyObject>
+<referredKeyID>40EC9C08-8213-F503-F5B5-A4F0AA7CE044</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idExamenes</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

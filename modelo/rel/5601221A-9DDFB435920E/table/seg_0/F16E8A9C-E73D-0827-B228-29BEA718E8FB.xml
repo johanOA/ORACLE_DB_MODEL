@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F16E8A9C-E73D-0827-B228-29BEA718E8FB" name="Edificios">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-13 15:47:19 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<ordsAlias>table_25</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idEdificio" id="A93EE266-B455-183A-E11A-4155FA5E65E8">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-13 15:47:48 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="5EDEF983-00E7-0E2E-2215-BFDCC847F6CE">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-13 15:48:21 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D3EF9409-1433-5216-531C-25676F4A3250" name="Edificios_PK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-13 15:47:56 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A93EE266-B455-183A-E11A-4155FA5E65E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

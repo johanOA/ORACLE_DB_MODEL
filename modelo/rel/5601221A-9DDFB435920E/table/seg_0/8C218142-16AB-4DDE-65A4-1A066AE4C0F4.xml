@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2ED4668F-A904-0707-20F8-8EE89F9A9D5B" name="Grupos">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8C218142-16AB-4DDE-65A4-1A066AE4C0F4" name="Lugares">
 <createdBy>ospin</createdBy>
-<createdTime>2024-03-08 16:57:06 UTC</createdTime>
+<createdTime>2024-03-13 15:45:20 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
-<ordsAlias>table_6</ordsAlias>
+<ordsAlias>table_23</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="idGrupo" id="FA2041A2-D5F1-62E1-FCC8-2E1540FEFD38">
+<Column name="idLugar" id="37207862-E266-78D0-6852-A86B71E6E176">
 <createdBy>ospin</createdBy>
-<createdTime>2024-03-08 16:59:20 UTC</createdTime>
+<createdTime>2024-03-13 15:45:48 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -18,30 +18,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="nombregrupo" id="4BF4215F-9301-3CD2-DC98-056CA33A3D17">
+<Column name="idEdificio" id="2C26EEFF-AF9D-EC6E-1D88-DB6789E42F20">
 <createdBy>ospin</createdBy>
-<createdTime>2024-03-08 16:59:20 UTC</createdTime>
-<ownerDesignName>modelo</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>40 BYTE</dataTypeSize>
-<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="añoacatemico" id="2158C8D0-3013-E7E5-2059-30E5784DBCF5">
-<createdBy>ospin</createdBy>
-<createdTime>2024-03-08 16:59:20 UTC</createdTime>
-<ownerDesignName>modelo</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="idDocente_tutor" id="76242CDD-1042-1710-3366-3607EBAD6706">
-<createdBy>ospin</createdBy>
-<createdTime>2024-03-13 15:35:26 UTC</createdTime>
+<createdTime>2024-03-13 15:48:31 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -50,30 +29,54 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="B87A3E07-3D14-9CDD-EB68-E752320941E1" referredColumn="F0B2C168-8062-7E1B-5EF1-31720723879C"/>
+<colAssociation fkAssociation="BF6DA4DB-400E-12EC-E889-BE8D3DC2E624" referredColumn="A93EE266-B455-183A-E11A-4155FA5E65E8"/>
+</associations>
+</Column>
+<Column name="idSalon" id="1CE12B8D-0E98-CF77-6625-B6174DD5854C">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-13 15:49:33 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="241AD7E2-7F28-0B3A-2161-781078E4E1B8" referredColumn="F872068B-DCBC-B22C-899F-DDF2EDC6165A"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="39E44D83-86D1-3BE9-5BA6-7A436C2A4EC2" name="Grupos_PK">
+<ind_PK_UK id="266BB4BF-F0CB-3087-C899-40B98C7AE4A7" name="Lugares_PK">
 <createdBy>ospin</createdBy>
-<createdTime>2024-03-08 16:59:20 UTC</createdTime>
+<createdTime>2024-03-13 15:45:48 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="FA2041A2-D5F1-62E1-FCC8-2E1540FEFD38"/>
+<colUsage columnID="37207862-E266-78D0-6852-A86B71E6E176"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="CFC8F146-9657-D816-81EA-D51D5F341A7A" name="Grupos_Docentes_FK">
+<ind_PK_UK id="0741A039-096E-2A94-2FE9-4605183E19DC" name="Lugares_Edificios_FK">
 <createdBy>ospin</createdBy>
-<createdTime>2024-03-13 15:35:26 UTC</createdTime>
+<createdTime>2024-03-13 15:48:31 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="76242CDD-1042-1710-3366-3607EBAD6706"/>
+<colUsage columnID="2C26EEFF-AF9D-EC6E-1D88-DB6789E42F20"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="406354CE-E6A1-3F0F-2FF0-FBE5431A22D0" name="Lugares_Salones_FK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-13 15:49:33 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1CE12B8D-0E98-CF77-6625-B6174DD5854C"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

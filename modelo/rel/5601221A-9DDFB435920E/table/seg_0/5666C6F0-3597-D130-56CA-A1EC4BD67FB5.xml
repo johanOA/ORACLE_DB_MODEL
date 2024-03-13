@@ -84,6 +84,34 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="idCurso" id="815BAD4B-6F26-D676-AF51-083AA85A7304">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-13 15:09:11 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4DC4040C-F7E2-57B2-030D-81F54106A94B" referredColumn="F510357E-CD95-9A48-1254-5721AA56D6C7"/>
+</associations>
+</Column>
+<Column name="idGrupo" id="73B678A0-71D8-3F01-8B63-C96312D3E0F5">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-13 15:13:31 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3F6D58A9-B998-965E-B088-AB3B1241AF70" referredColumn="FA2041A2-D5F1-62E1-FCC8-2E1540FEFD38"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="E0678891-8E81-900C-7243-981B8668F13C" name="Estudiantes_PK">
@@ -95,6 +123,26 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="0801D3A5-4D04-2984-950B-0F5D04AAFF4E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E667E587-948D-71F2-3FEF-1735AA88CA03" name="Estudiantes_Cursos_FK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-13 15:09:11 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="815BAD4B-6F26-D676-AF51-083AA85A7304"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A234AB9E-7DF8-2A43-F417-F1D0A57F5457" name="Estudiantes_Grupos_FK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-13 15:13:31 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="73B678A0-71D8-3F01-8B63-C96312D3E0F5"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

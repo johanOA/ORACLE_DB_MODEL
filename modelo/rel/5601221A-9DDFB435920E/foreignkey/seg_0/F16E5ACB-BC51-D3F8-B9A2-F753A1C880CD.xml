@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F16E5ACB-BC51-D3F8-B9A2-F753A1C880CD" containerWithKeyObject="51CF0E54-85F0-A733-2E41-865F61E0441C" localFKIndex="FB4A7A89-4DBE-1AA5-074D-5C26D817C11B" name="Examenes_Horarios_FK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-13 15:37:56 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<referredTableLongName>Horarios</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D5D082AB-1E02-D91C-2F35-5CCAB7D6990B</referredTableID>
+<keyObject>3B715FA3-2818-1CA8-CE75-649430B4217C</keyObject>
+<referredKeyID>3B715FA3-2818-1CA8-CE75-649430B4217C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idHorario</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

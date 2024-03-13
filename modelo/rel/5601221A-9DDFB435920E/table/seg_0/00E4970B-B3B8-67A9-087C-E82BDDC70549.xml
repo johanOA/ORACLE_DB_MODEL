@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="00E4970B-B3B8-67A9-087C-E82BDDC70549" name="Bancos_Temas">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-13 14:45:33 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idBancoTema" id="1161F98B-20FE-84FE-8A66-C2679CCB9B9F">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-13 14:45:58 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="idBanco" id="4BB91012-B318-8D4B-4261-546B828F403A">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-13 14:46:18 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BBBF4045-D764-F213-1BEA-69EC0E473B29" referredColumn="4F19C56C-EC07-3A17-C339-4AC47EF7897B"/>
+</associations>
+</Column>
+<Column name="idTema" id="48F0871B-1DB3-F67B-5EED-74A1628DBA55">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-13 14:46:34 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E2FBD913-1DBB-9188-0014-DD3B78753F63" referredColumn="8F223DB7-1271-7AFB-5A4B-743C2C091E7F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="06CA7775-A824-DACE-EC02-51270DAAC968" name="Bancos_Temas_PK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-13 14:45:58 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1161F98B-20FE-84FE-8A66-C2679CCB9B9F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D2C464FD-8DE9-7ECA-34E7-72C8A80BD2EA" name="Bancos_Temas_BancosPreguntas_FK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-13 14:46:18 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4BB91012-B318-8D4B-4261-546B828F403A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4AC556A8-8975-CD0F-AF4E-CFC3AC7546CC" name="Bancos_Temas_Temas_FK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-13 14:46:34 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="48F0871B-1DB3-F67B-5EED-74A1628DBA55"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

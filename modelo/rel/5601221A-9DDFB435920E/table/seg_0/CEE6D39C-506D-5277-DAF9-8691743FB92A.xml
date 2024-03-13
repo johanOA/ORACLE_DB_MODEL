@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CEE6D39C-506D-5277-DAF9-8691743FB92A" name="Asignacion_Dias">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-13 15:28:05 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<ordsAlias>table_21</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idAsignaionDia" id="D59716D3-EDF6-8367-3532-1367FA4629A8">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-13 15:28:50 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="idHorario" id="63A70FB6-CB31-C761-5F40-C0AF000FFB15">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-13 15:28:58 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C8B1615E-2FAB-49D8-3DC7-E1809CB418E3" referredColumn="16D15733-69F1-B54D-82B7-C31632A08666"/>
+</associations>
+</Column>
+<Column name="idDia" id="166EA929-5320-131D-F4EF-3F227A7A269C">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-13 15:29:03 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E4C90C30-D200-B330-67D7-9E1BA0295B9C" referredColumn="AF107AC0-E5B2-9D41-60FE-54D4285EA8F5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0C7907FC-0794-090E-7928-97307FCCD5B1" name="Asignacion_Dias_PK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-13 15:28:50 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D59716D3-EDF6-8367-3532-1367FA4629A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="905D6939-9C35-0C7A-D7F7-5E9EF288D398" name="Asignacion_Dias_Horarios_FK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-13 15:28:58 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63A70FB6-CB31-C761-5F40-C0AF000FFB15"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B96B0615-22A5-3522-BAEA-53531EA092B5" name="Asignacion_Dias_Dias_FK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-13 15:29:03 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="166EA929-5320-131D-F4EF-3F227A7A269C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2ED4668F-A904-0707-20F8-8EE89F9A9D5B" name="Grupos">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D5D082AB-1E02-D91C-2F35-5CCAB7D6990B" name="Horarios">
 <createdBy>ospin</createdBy>
-<createdTime>2024-03-08 16:57:06 UTC</createdTime>
+<createdTime>2024-03-13 15:21:35 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
-<ordsAlias>table_6</ordsAlias>
+<ordsAlias>table_19</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="idGrupo" id="FA2041A2-D5F1-62E1-FCC8-2E1540FEFD38">
+<Column name="idHorario" id="16D15733-69F1-B54D-82B7-C31632A08666">
 <createdBy>ospin</createdBy>
-<createdTime>2024-03-08 16:59:20 UTC</createdTime>
+<createdTime>2024-03-13 15:21:53 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -18,30 +18,29 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="nombregrupo" id="4BF4215F-9301-3CD2-DC98-056CA33A3D17">
+<Column name="hora_inicio" id="1AA75F21-5266-A7BC-6192-33E05A6C5B53">
 <createdBy>ospin</createdBy>
-<createdTime>2024-03-08 16:59:20 UTC</createdTime>
+<createdTime>2024-03-13 15:25:09 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>40 BYTE</dataTypeSize>
-<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="añoacatemico" id="2158C8D0-3013-E7E5-2059-30E5784DBCF5">
-<createdBy>ospin</createdBy>
-<createdTime>2024-03-08 16:59:20 UTC</createdTime>
-<ownerDesignName>modelo</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
+<logicalDatatype>LOGDT014</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="idDocente_tutor" id="76242CDD-1042-1710-3366-3607EBAD6706">
+<Column name="hora_fin" id="ECD1CD1E-2ABA-0BF4-BC84-29590D41B5BF">
 <createdBy>ospin</createdBy>
-<createdTime>2024-03-13 15:35:26 UTC</createdTime>
+<createdTime>2024-03-13 15:26:02 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="idLugar" id="6FF1E119-76FF-AFD4-8E57-94133F684BAA">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-13 15:49:58 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -50,30 +49,30 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="B87A3E07-3D14-9CDD-EB68-E752320941E1" referredColumn="F0B2C168-8062-7E1B-5EF1-31720723879C"/>
+<colAssociation fkAssociation="4BEE7D30-F199-B85B-C28D-5C943D6337F4" referredColumn="37207862-E266-78D0-6852-A86B71E6E176"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="39E44D83-86D1-3BE9-5BA6-7A436C2A4EC2" name="Grupos_PK">
+<ind_PK_UK id="3B715FA3-2818-1CA8-CE75-649430B4217C" name="Horarios_PK">
 <createdBy>ospin</createdBy>
-<createdTime>2024-03-08 16:59:20 UTC</createdTime>
+<createdTime>2024-03-13 15:21:53 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="FA2041A2-D5F1-62E1-FCC8-2E1540FEFD38"/>
+<colUsage columnID="16D15733-69F1-B54D-82B7-C31632A08666"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="CFC8F146-9657-D816-81EA-D51D5F341A7A" name="Grupos_Docentes_FK">
+<ind_PK_UK id="AE8CAD1C-9706-6D3C-AB66-13D87E86384E" name="Horarios_Lugares_FK">
 <createdBy>ospin</createdBy>
-<createdTime>2024-03-13 15:35:26 UTC</createdTime>
+<createdTime>2024-03-13 15:49:58 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="76242CDD-1042-1710-3366-3607EBAD6706"/>
+<colUsage columnID="6FF1E119-76FF-AFD4-8E57-94133F684BAA"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
