@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0A6C894A-87BC-9594-D133-3027E48509C5" name="Materias">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-27 15:13:17 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<ordsAlias>table_28</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idMateria" id="B549493C-6912-53A5-F3E3-2EC08CCC23E0">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-27 15:14:24 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="E462AAD5-4755-CA43-1039-D492B81BBCAD">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-27 15:14:24 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="F7D4D6FF-7C64-8F46-FCC0-3588CE828E7F">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-27 15:14:24 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="021D952A-55D9-29D5-60EF-CCF003E261C4" name="Materias_PK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-27 15:14:24 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B549493C-6912-53A5-F3E3-2EC08CCC23E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

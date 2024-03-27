@@ -40,18 +40,17 @@
 <ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="idCurso" id="B509C141-6645-B5B9-3E85-CCBCFC151E4C">
+<Column name="idMateria" id="03F37704-3C6C-07D4-A72D-F190EB7E7A81">
 <createdBy>ospin</createdBy>
-<createdTime>2024-03-13 15:17:52 UTC</createdTime>
+<createdTime>2024-03-27 15:24:03 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="15FC8F88-FED1-7DAA-1B8F-C6E08327C4F2" referredColumn="F510357E-CD95-9A48-1254-5721AA56D6C7"/>
+<colAssociation fkAssociation="583883FB-9DA1-C733-906D-3895F551D845" referredColumn="B549493C-6912-53A5-F3E3-2EC08CCC23E0"/>
 </associations>
 </Column>
 </columns>
@@ -67,14 +66,14 @@
 <colUsage columnID="27FC1E5B-0042-2612-AD88-337D95CE2BDE"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="990AEDD1-06B3-AA97-BD24-FFCC34A0E0B7" name="UnidadesEstudio_Cursos_FK">
+<ind_PK_UK id="30BCD1FD-BE50-85BC-2A2E-F3D85AB7EF0B" name="UnidadesEstudio_Materias_FK">
 <createdBy>ospin</createdBy>
-<createdTime>2024-03-13 15:17:52 UTC</createdTime>
+<createdTime>2024-03-27 15:24:03 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="B509C141-6645-B5B9-3E85-CCBCFC151E4C"/>
+<colUsage columnID="03F37704-3C6C-07D4-A72D-F190EB7E7A81"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

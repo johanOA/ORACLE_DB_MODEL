@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="idExamenes" id="20F0FC1C-5996-F82B-F32A-917704BCE931">
+<Column name="idExamenen" id="20F0FC1C-5996-F82B-F32A-917704BCE931">
 <createdBy>ospin</createdBy>
 <createdTime>2024-03-08 17:07:30 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
@@ -39,13 +39,24 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="duracion" id="764DFECF-5E19-224A-1147-BEB840ED93E5">
+<Column name="duracionExamen" id="764DFECF-5E19-224A-1147-BEB840ED93E5">
 <createdBy>ospin</createdBy>
 <createdTime>2024-03-08 17:07:30 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT014</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cantidadPreguntas" id="973B4045-154C-0C38-BDCF-8C8D765E2243">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-27 14:39:57 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -58,20 +69,6 @@
 <logicalDatatype>LOGDT021</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="idDocente" id="0FCC6956-E894-7C64-401F-B890662EF95F">
-<createdBy>ospin</createdBy>
-<createdTime>2024-03-13 15:00:41 UTC</createdTime>
-<ownerDesignName>modelo</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="350C959F-E8F9-728F-660D-1C5E4DFDD418" referredColumn="F0B2C168-8062-7E1B-5EF1-31720723879C"/>
-</associations>
 </Column>
 <Column name="idHorario" id="22AD0C91-895D-B776-F444-359B66FBA8A4">
 <createdBy>ospin</createdBy>
@@ -87,6 +84,20 @@
 <colAssociation fkAssociation="F16E5ACB-BC51-D3F8-B9A2-F753A1C880CD" referredColumn="16D15733-69F1-B54D-82B7-C31632A08666"/>
 </associations>
 </Column>
+<Column name="idCurso" id="5EC9469C-5EFD-CEB1-0390-E82DDDA041B9">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-27 15:22:11 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6E1A5CD4-2347-F9B2-1812-2A6D66F97344" referredColumn="F510357E-CD95-9A48-1254-5721AA56D6C7"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="40EC9C08-8213-F503-F5B5-A4F0AA7CE044" name="Examenes_PK">
@@ -100,16 +111,6 @@
 <colUsage columnID="20F0FC1C-5996-F82B-F32A-917704BCE931"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="11E27EA5-8A75-3C6E-1BF1-7F31E5D8AA11" name="Examenes_Docentes_FK">
-<createdBy>ospin</createdBy>
-<createdTime>2024-03-13 15:00:41 UTC</createdTime>
-<ownerDesignName>modelo</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="0FCC6956-E894-7C64-401F-B890662EF95F"/>
-</indexColumnUsage>
-</ind_PK_UK>
 <ind_PK_UK id="FB4A7A89-4DBE-1AA5-074D-5C26D817C11B" name="Examenes_Horarios_FK">
 <createdBy>ospin</createdBy>
 <createdTime>2024-03-13 15:37:56 UTC</createdTime>
@@ -118,6 +119,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="22AD0C91-895D-B776-F444-359B66FBA8A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E1715C43-462D-F423-B9FD-D05034646576" name="Examenes_Cursos_FK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-27 15:22:11 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5EC9469C-5EFD-CEB1-0390-E82DDDA041B9"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

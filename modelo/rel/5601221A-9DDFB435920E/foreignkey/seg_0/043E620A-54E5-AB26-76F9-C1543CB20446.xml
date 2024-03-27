@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="043E620A-54E5-AB26-76F9-C1543CB20446" containerWithKeyObject="8BC6158D-F35D-E47E-E8A4-33CD0C3F46B3" localFKIndex="2CADC126-5805-3D37-E16E-2E94E65FB8DF" name="Respuestas_Estudiantes_Respuestas_FK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-27 14:55:07 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<referredTableLongName>Respuestas</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FBB85421-370E-A379-9A9C-72EB2FC3CE96</referredTableID>
+<keyObject>F03FA9AA-8A4C-CC4D-F475-18A9E08B8311</keyObject>
+<referredKeyID>F03FA9AA-8A4C-CC4D-F475-18A9E08B8311</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idRespuesta</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

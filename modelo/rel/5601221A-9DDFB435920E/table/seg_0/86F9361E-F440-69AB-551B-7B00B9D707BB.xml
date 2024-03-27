@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="229273C2-46AC-D93A-D667-54EEA891FB53" name="Bancos_Preguntas">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="86F9361E-F440-69AB-551B-7B00B9D707BB" name="Asignaciones_Preguntas">
 <createdBy>ospin</createdBy>
-<createdTime>2024-03-13 14:55:19 UTC</createdTime>
+<createdTime>2024-03-27 14:45:49 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
-<ordsAlias>table_15</ordsAlias>
+<ordsAlias>table_26</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="idBancoPregunta" id="F7A306A9-3DE9-4D71-AD87-33133AF267B0">
+<Column name="idAsignacion" id="5387C40D-B162-6AE7-8291-D5A116E6AA56">
 <createdBy>ospin</createdBy>
-<createdTime>2024-03-13 14:57:27 UTC</createdTime>
+<createdTime>2024-03-27 14:46:42 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -18,9 +18,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="idBanco" id="BBE1F4FC-6858-DD0A-BA57-D36023CCB696">
+<Column name="idEstudiante" id="1F0C4249-8FDC-2500-F25A-2BF86EEE240D">
 <createdBy>ospin</createdBy>
-<createdTime>2024-03-13 14:55:44 UTC</createdTime>
+<createdTime>2024-03-27 14:47:16 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -29,12 +29,12 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="88C85E3E-C4EF-0CFC-E813-7BE62D0D5012" referredColumn="4F19C56C-EC07-3A17-C339-4AC47EF7897B"/>
+<colAssociation fkAssociation="6A3862DE-88D9-FD4D-EF72-9800634CF2B2" referredColumn="0801D3A5-4D04-2984-950B-0F5D04AAFF4E"/>
 </associations>
 </Column>
-<Column name="idPreguntas" id="B15B7AAB-E0A2-D736-AB37-31FB176DA311">
+<Column name="idPreguntas" id="264F5A49-9DB9-23A4-0E84-9CEAD8D70E57">
 <createdBy>ospin</createdBy>
-<createdTime>2024-03-13 14:56:09 UTC</createdTime>
+<createdTime>2024-03-27 14:47:28 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -43,40 +43,40 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="6FA11A7E-85F1-09C3-EEC5-FCF25FCAF0A8" referredColumn="131FD629-C0C4-3D31-D15F-9ABAF0BD953D"/>
+<colAssociation fkAssociation="C6EFCD8D-11AE-64CD-88B6-9F6976441058" referredColumn="131FD629-C0C4-3D31-D15F-9ABAF0BD953D"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="55441065-E09B-C213-9F75-191EC7AA114A" name="Bancos_Preguntas_PK">
+<ind_PK_UK id="341848EF-28AB-C21F-4062-0F2BD18080A5" name="Asignaciones_Preguntas_PK">
 <createdBy>ospin</createdBy>
-<createdTime>2024-03-13 14:56:43 UTC</createdTime>
+<createdTime>2024-03-27 14:46:42 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="F7A306A9-3DE9-4D71-AD87-33133AF267B0"/>
+<colUsage columnID="5387C40D-B162-6AE7-8291-D5A116E6AA56"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="5766E91A-EA73-3596-CB2F-7F78AB77F0B8" name="Bancos_Preguntas_BancosPreguntas_FK">
+<ind_PK_UK id="60478903-A40A-64BA-1C84-1B61AD37FE69" name="Asignaciones_Preguntas_Estudiantes_FK">
 <createdBy>ospin</createdBy>
-<createdTime>2024-03-13 14:55:44 UTC</createdTime>
+<createdTime>2024-03-27 14:47:16 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="BBE1F4FC-6858-DD0A-BA57-D36023CCB696"/>
+<colUsage columnID="1F0C4249-8FDC-2500-F25A-2BF86EEE240D"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="F3F434CC-A2CF-F4D2-7AD4-B8E7281DC810" name="Bancos_Preguntas_Preguntas_FK">
+<ind_PK_UK id="54D52B7B-BC03-D93C-BD2E-B757CFD0A084" name="Asignaciones_Preguntas_Preguntas_FK">
 <createdBy>ospin</createdBy>
-<createdTime>2024-03-13 14:56:09 UTC</createdTime>
+<createdTime>2024-03-27 14:47:28 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="B15B7AAB-E0A2-D736-AB37-31FB176DA311"/>
+<colUsage columnID="264F5A49-9DB9-23A4-0E84-9CEAD8D70E57"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

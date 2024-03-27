@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E1621AB9-C0B6-9CFA-6FB4-1D8B92E48717" containerWithKeyObject="E18C86C3-B46D-BB48-FF46-D6471D52530E" localFKIndex="C899BBFC-8CBF-5D0C-CC4F-384B1C2CB2B9" name="Temas_Contenidos_FK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-27 15:03:13 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<referredTableLongName>Contenidos</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>93C147EF-0B5D-DEA1-392E-0D297AD664C8</referredTableID>
+<keyObject>34EEC600-EA09-9890-9FD5-46C49F2E5499</keyObject>
+<referredKeyID>34EEC600-EA09-9890-9FD5-46C49F2E5499</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idContenido</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -42,6 +42,20 @@
 <ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="idContenido" id="D77E3944-D4B1-77FE-F1CB-758CE8A8CFF4">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-27 15:03:13 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E1621AB9-C0B6-9CFA-6FB4-1D8B92E48717" referredColumn="2CB9C5A1-6903-0E41-DD5D-62CEE6AC3804"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="E7BD6F7F-BD7E-4715-6F36-4C7BDEB16BAB" name="Temas_PK">
@@ -53,6 +67,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="8F223DB7-1271-7AFB-5A4B-743C2C091E7F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C899BBFC-8CBF-5D0C-CC4F-384B1C2CB2B9" name="Temas_Contenidos_FK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-27 15:03:13 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D77E3944-D4B1-77FE-F1CB-758CE8A8CFF4"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

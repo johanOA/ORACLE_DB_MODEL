@@ -38,9 +38,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="idLugar" id="6FF1E119-76FF-AFD4-8E57-94133F684BAA">
+<Column name="idAsignaionDia" id="16A52337-ADE3-5B4C-351D-817F733B37A3">
 <createdBy>ospin</createdBy>
-<createdTime>2024-03-13 15:49:58 UTC</createdTime>
+<createdTime>2024-03-27 15:27:48 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -49,7 +49,7 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="4BEE7D30-F199-B85B-C28D-5C943D6337F4" referredColumn="37207862-E266-78D0-6852-A86B71E6E176"/>
+<colAssociation fkAssociation="1E1393CA-5E0A-EE5F-79A1-ED897BC1B994" referredColumn="D59716D3-EDF6-8367-3532-1367FA4629A8"/>
 </associations>
 </Column>
 </columns>
@@ -65,14 +65,14 @@
 <colUsage columnID="16D15733-69F1-B54D-82B7-C31632A08666"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="AE8CAD1C-9706-6D3C-AB66-13D87E86384E" name="Horarios_Lugares_FK">
+<ind_PK_UK id="7EE13C21-D151-42B3-8C51-4FB581803643" name="Horarios_Asignacion_Dias_FK">
 <createdBy>ospin</createdBy>
-<createdTime>2024-03-13 15:49:58 UTC</createdTime>
+<createdTime>2024-03-27 15:27:48 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="6FF1E119-76FF-AFD4-8E57-94133F684BAA"/>
+<colUsage columnID="16A52337-ADE3-5B4C-351D-817F733B37A3"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

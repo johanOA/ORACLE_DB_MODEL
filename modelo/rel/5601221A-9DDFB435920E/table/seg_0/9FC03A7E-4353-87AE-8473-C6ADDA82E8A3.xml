@@ -46,6 +46,46 @@
 <colAssociation fkAssociation="2A7DF0FE-E1D8-A8A3-1FB9-5DA4C8F290AC" referredColumn="20F0FC1C-5996-F82B-F32A-917704BCE931"/>
 </associations>
 </Column>
+<Column name="hora_inicio" id="DFACB0F3-FE23-903E-6986-7141EAD51726">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-27 15:00:26 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hora_fin" id="046229CC-C260-8935-E260-6920F4AF820E">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-27 15:00:26 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_asignacion" id="61177873-3253-0424-7B8E-E0FF2BC76D66">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-27 15:00:26 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nota" id="0A15BA17-4E90-2D8A-EEF7-F974375E1FE9">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-27 15:01:39 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="5826C779-17C9-2765-C3FF-DB93D0869398" name="Asignaciones_Estudiantes_PK">

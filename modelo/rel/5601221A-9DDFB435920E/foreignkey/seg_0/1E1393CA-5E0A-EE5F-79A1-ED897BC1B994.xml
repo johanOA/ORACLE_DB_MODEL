@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1E1393CA-5E0A-EE5F-79A1-ED897BC1B994" containerWithKeyObject="D5D082AB-1E02-D91C-2F35-5CCAB7D6990B" localFKIndex="7EE13C21-D151-42B3-8C51-4FB581803643" name="Horarios_Asignacion_Dias_FK">
+<createdBy>ospin</createdBy>
+<createdTime>2024-03-27 15:27:48 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<referredTableLongName>Asignacion_Dias</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CEE6D39C-506D-5277-DAF9-8691743FB92A</referredTableID>
+<keyObject>0C7907FC-0794-090E-7928-97307FCCD5B1</keyObject>
+<referredKeyID>0C7907FC-0794-090E-7928-97307FCCD5B1</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idAsignaionDia</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
