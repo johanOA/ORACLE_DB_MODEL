@@ -64,7 +64,7 @@
 
   CREATE TABLE "EDUQUIZ"."CONTENIDOS" 
    (	"IDCONTENIDO" NUMBER(*,0), 
-	"DESCRICONTENIDO" VARCHAR2(40 BYTE), 
+	"DESCRICONTENIDO" VARCHAR2(60 BYTE), 
 	"IDUNIDAD" NUMBER(*,0)
    ) SEGMENT CREATION IMMEDIATE 
   PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
@@ -367,6 +367,56 @@ REM INSERTING into EDUQUIZ.BANCOPREGUNTAS
 SET DEFINE OFF;
 REM INSERTING into EDUQUIZ.CONTENIDOS
 SET DEFINE OFF;
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('1','Introducción al tema - Contenido 1','1');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('2','Conceptos básicos - Contenido 1','2');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('3','Cálculo de límites - Contenido 1','3');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('5','Edad Media - Contenido 1','5');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('6','Siglo de Oro - Contenido 1','6');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('8','Leyes de Newton - Contenido 1','8');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('9','Trabajo y energía - Contenido 1','9');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('11','Reacciones orgánicas - Contenido 1','11');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('13','Estructuras celulares - Contenido 1','13');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('14','Funciones celulares - Contenido 1','14');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('19','Relieve terrestre - Contenido 1','19');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('20','Climatología - Contenido 1','20');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('22','Gramática avanzada - Contenido 1','22');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('24','Técnicas de natación - Contenido 1','24');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('25','Estilos de nado - Contenido 1','25');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('26','Actividades acuáticas - Contenido 1','26');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('28','Materiales y herramientas - Contenido 1','28');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('29','Técnicas de aplicación - Contenido 1','29');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('31','Géneros musicales - Contenido 1','31');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('32','Análisis de obras - Contenido 1','32');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('34','Desarrollo frontend - Contenido 1','34');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('35','Desarrollo backend - Contenido 1','35');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('37','Pensamiento presocrático - Contenido 1','37');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('38','Filosofía clásica - Contenido 1','38');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('40','Oferta y demanda - Contenido 1','40');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('41','Elasticidad y aplicaciones - Contenido 1','41');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('43','Registro contable - Contenido 1','43');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('44','Análisis financiero - Contenido 1','44');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('46','Delitos y sanciones - Contenido 1','46');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('47','Procedimiento penal - Contenido 1','47');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('4','Introducción a la literatura española - Contenido 1','4');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('7','Introducción a la mecánica clásica - Contenido 1','7');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('10','Introducción a la química orgánica - Contenido 1','10');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('12','Introducción a la biología celular - Contenido 1','12');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('15','Introducción a la historia antigua - Contenido 1','15');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('16','Civilizaciones del Mediterráneo - Contenido 1','16');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('17','Imperios del Lejano Oriente - Contenido 1','17');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('18','Introducción a la geografía física - Contenido 1','18');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('21','Nociones básicas de inglés - Contenido 1','21');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('23','Conversación y comprensión auditiva - Contenido 1','23');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('27','Introducción a la pintura al óleo - Contenido 1','27');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('30','Introducción a la apreciación musical - Contenido 1','30');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('33','Fundamentos de la programación web - Contenido 1','33');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('36','Orígenes de la filosofía antigua - Contenido 1','36');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('39','Principios de la microeconomía - Contenido 1','39');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('42','Conceptos básicos de contabilidad - Contenido 1','42');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('45','Fundamentos del derecho penal - Contenido 1','45');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('48','Teorías del desarrollo humano - Contenido 1','48');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('49','Desarrollo prenatal y neonatal - Contenido 1','49');
+Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('50','Desarrollo infantil y adolescente - Contenido 1','50');
 REM INSERTING into EDUQUIZ.CURSOS
 SET DEFINE OFF;
 Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('1','Cálculo Diferencial','Fundamentos del cálculo diferencial','1','1');
