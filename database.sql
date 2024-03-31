@@ -590,6 +590,56 @@ REM INSERTING into EDUQUIZ.TIPOSPREGUNTAS
 SET DEFINE OFF;
 REM INSERTING into EDUQUIZ.UNIDADESESTUDIO
 SET DEFINE OFF;
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('1','Unidad 1','Introducción al tema','1');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('2','Unidad 2','Conceptos básicos','1');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('3','Unidad 3','Cálculo de límites','1');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('4','Unidad 1','Introducción a la literatura española','2');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('5','Unidad 2','Edad Media','2');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('6','Unidad 3','Siglo de Oro','2');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('7','Unidad 1','Introducción a la mecánica clásica','3');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('8','Unidad 2','Leyes de Newton','3');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('9','Unidad 3','Trabajo y energía','3');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('10','Unidad 1','Introducción a la química orgánica','4');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('11','Unidad 3','Reacciones orgánicas','4');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('12','Unidad 1','Introducción a la biología celular','5');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('13','Unidad 2','Estructuras celulares','5');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('14','Unidad 3','Funciones celulares','5');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('15','Unidad 1','Introducción a la historia antigua','6');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('16','Unidad 2','Civilizaciones del Mediterráneo','6');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('17','Unidad 3','Imperios del Lejano Oriente','6');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('18','Unidad 1','Introducción a la geografía física','7');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('19','Unidad 2','Relieve terrestre','7');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('20','Unidad 3','Climatología','7');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('21','Unidad 1','Nociones básicas de inglés','8');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('22','Unidad 2','Gramática avanzada','8');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('23','Unidad 3','Conversación y comprensión auditiva','8');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('24','Unidad 1','Técnicas de natación','9');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('25','Unidad 2','Estilos de nado','9');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('26','Unidad 3','Actividades acuáticas','9');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('27','Unidad 1','Introducción a la pintura al óleo','10');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('28','Unidad 2','Materiales y herramientas','10');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('29','Unidad 3','Técnicas de aplicación','10');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('30','Unidad 1','Introducción a la apreciación musical','11');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('31','Unidad 2','Géneros musicales','11');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('32','Unidad 3','Análisis de obras','11');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('33','Unidad 1','Fundamentos de la programación web','12');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('34','Unidad 2','Desarrollo frontend','12');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('35','Unidad 3','Desarrollo backend','12');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('36','Unidad 1','Orígenes de la filosofía antigua','13');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('37','Unidad 2','Pensamiento presocrático','13');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('38','Unidad 3','Filosofía clásica','13');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('39','Unidad 1','Principios de la microeconomía','14');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('40','Unidad 2','Oferta y demanda','14');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('41','Unidad 3','Elasticidad y aplicaciones','14');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('42','Unidad 1','Conceptos básicos de contabilidad','15');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('43','Unidad 2','Registro contable','15');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('44','Unidad 3','Análisis financiero','15');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('45','Unidad 1','Fundamentos del derecho penal','16');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('46','Unidad 2','Delitos y sanciones','16');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('47','Unidad 3','Procedimiento penal','16');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('48','Unidad 1','Teorías del desarrollo humano','17');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('49','Unidad 2','Desarrollo prenatal y neonatal','17');
+Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERIA) values ('50','Unidad 3','Desarrollo infantil y adolescente','17');
 --------------------------------------------------------
 --  DDL for Index NOMBRE_CURSOS
 --------------------------------------------------------
