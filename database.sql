@@ -77,8 +77,8 @@
 
   CREATE TABLE "EDUQUIZ"."CURSOS" 
    (	"IDCURSO" NUMBER(*,0), 
-	"NOMBRECURSO" VARCHAR2(40 BYTE), 
-	"DESCRIPCION" VARCHAR2(40 BYTE), 
+	"NOMBRECURSO" VARCHAR2(60 BYTE), 
+	"DESCRIPCION" VARCHAR2(60 BYTE), 
 	"IDDOCENTE" NUMBER(*,0), 
 	"IDMATERIA" NUMBER(*,0)
    ) SEGMENT CREATION IMMEDIATE 
@@ -369,6 +369,52 @@ REM INSERTING into EDUQUIZ.CONTENIDOS
 SET DEFINE OFF;
 REM INSERTING into EDUQUIZ.CURSOS
 SET DEFINE OFF;
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('1','Cálculo Diferencial','Fundamentos del cálculo diferencial','1','1');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('2','Literatura Española','Estudio de obras literarias españolas','3','2');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('3','Mecánica Clásica','Leyes fundamentales de la mecánica','5','3');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('4','Química Orgánica','Estudio de compuestos orgánicos','4','4');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('5','Biología Celular','Estructura y función de las células','6','5');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('6','Historia Antigua','Civilizaciones de la antigüedad','7','6');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('7','Geografía Física','Estudio de la superficie terrestre','8','7');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('8','Inglés Avanzado','Perfeccionamiento del idioma inglés','15','8');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('9','Deportes Acuáticos','Práctica de natación y actividades acuáticas','20','9');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('10','Pintura al Óleo','Técnicas de pintura con óleo','49','10');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('11','Apreciación Musical','Análisis y comprensión de obras musicales','11','11');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('12','Programación Web','Desarrollo de sitios y aplicaciones web','30','12');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('13','Filosofía Antigua','Pensadores clásicos de la antigüedad','13','13');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('14','Microeconomía','Estudio del comportamiento económico individual','24','14');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('15','Contabilidad Financiera','Registro y análisis de operaciones financieras','15','15');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('16','Derecho Penal','Estudio de las leyes penales','16','16');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('17','Psicología del Desarrollo','Etapas y cambios en el desarrollo humano','17','17');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('18','Sociología Urbana','Análisis de las ciudades y sus dinámicas','18','18');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('19','Ética Profesional','Principios éticos en el ámbito laboral','19','19');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('20','Anatomía Humana','Estudio de la estructura del cuerpo humano','20','20');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('21','Programación Orientada a Objetos','Desarrollo de software con paradigma OOP','30','21');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('22','Diseño Web','Creación de interfaces gráficas para la web','26','22');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('23','Arquitectura Contemporánea','Tendencias actuales en arquitectura','33','23');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('28','Métodos Cuantitativos','Técnicas cuantitativas aplicadas a la industria','28','28');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('29','Gestión Ambiental','Protección y conservación del medio ambiente','22','29');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('30','Patología Médica','Estudio de enfermedades y sus causas','34','30');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('31','Cuidados Intensivos','Atención de pacientes en estado crítico','31','31');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('32','Odontología Pediátrica','Tratamientos dentales en niños','35','32');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('33','Farmacología Clínica','Uso de medicamentos en el tratamiento','33','33');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('34','Nutrición Deportiva','Alimentación para el rendimiento atlético','34','34');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('35','Cocina Internacional','Preparación de platillos de diversas culturas','25','35');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('36','Planificación Turística','Diseño y gestión de paquetes turísticos','40','36');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('37','Deportes de Conjunto','Práctica de deportes en equipo','23','37');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('38','Teatro Contemporáneo','Interpretación y montaje de obras actuales','29','38');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('39','Comunicación Organizacional','Estrategias de comunicación en empresas','36','39');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('40','Periodismo Digital','Producción de contenido periodístico en línea','36','40');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('41','Cálculo Integral','Fundamentos del cálculo integral','1','1');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('42','Literatura Latinoamericana','Estudio de obras literarias latinoamericanas','3','2');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('43','Electricidad y Magnetismo','Fenómenos eléctricos y magnéticos','5','3');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('44','Química Inorgánica','Estudio de compuestos inorgánicos','4','4');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('45','Ecología','Estudio de los ecosistemas y sus interacciones','6','5');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('46','Historia Moderna','Acontecimientos históricos desde el siglo XV','7','6');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('47','Geografía Humana','Estudio de la sociedad y su entorno','8','7');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('48','Francés Intermedio','Perfeccionamiento del idioma francés','45','8');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('49','Deportes de Raqueta','Práctica de tenis, bádminton y squash','20','9');
+Insert into EDUQUIZ.CURSOS (IDCURSO,NOMBRECURSO,DESCRIPCION,IDDOCENTE,IDMATERIA) values ('50','Escultura','Técnicas de modelado y talla','49','10');
 REM INSERTING into EDUQUIZ.DIAS
 SET DEFINE OFF;
 Insert into EDUQUIZ.DIAS (IDDIA,DESCRIPCION) values ('1','Lunes');
@@ -380,6 +426,56 @@ Insert into EDUQUIZ.DIAS (IDDIA,DESCRIPCION) values ('6','Sabado');
 Insert into EDUQUIZ.DIAS (IDDIA,DESCRIPCION) values ('7','Domingo');
 REM INSERTING into EDUQUIZ.DOCENTES
 SET DEFINE OFF;
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('1','Juan','Pérez','jperez','jperez@universidad.edu','password1','5551234','Calle Principal 123','1');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('2','María','González','mgonzalez','mgonzalez@colegio.edu','password2','5557890','Avenida Secundaria 456','2');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('3','Carlos','Rodríguez','crodriguez','crodriguez@idiomas.edu','password3','5559876','Plaza Central 789','3');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('4','Ana','López','alopez','alopez@primaria.edu','password4','5553456','Avenida del Parque 234','4');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('5','Pedro','Martínez','pmartinez','pmartinez@arte.edu','password5','5556789','Bulevar de las Artes 567','5');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('6','Laura','Sánchez','lsanchez','lsanchez@universidad.edu','password6','5558901','Calle Principal 890','6');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('7','Javier','Ramírez','jramirez','jramirez@colegio.edu','password7','5552345','Avenida Internacional 345','7');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('8','Sofía','Torres','storres','storres@capacitacion.edu','password8','5557678','Calle Comercial 678','8');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('9','Miguel','Fernández','mfernandez','mfernandez@secundaria.edu','password9','5559012','Bulevar Estudiantil 901','9');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('10','Lucía','García','lgarcia','lgarcia@tecnologico.edu','password10','5554567','Avenida Tecnológica 234','10');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('11','Diego','Hernández','dhernandez','dhernandez@musica.edu','password11','5557890','Plaza de la Música 567','11');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('12','Marta','Jiménez','mjimenez','mjimenez@montessori.edu','password12','5550123','Calle Alternativa 890','12');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('13','Andrés','Ruiz','aruiz','aruiz@agricola.edu','password13','5556789','Ruta Rural 345','13');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('14','Claudia','Díaz','cdiaz','cdiaz@artesyoficios.edu','password14','5552345','Avenida Artesanal 678','14');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('15','Sergio','Gómez','sgomez','sgomez@idiomas.edu','password15','5557890','Plaza Internacional 901','15');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('16','Adriana','Morales','amorales','amorales@tecnico.edu','password16','5553456','Calle Industrial 234','16');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('17','Julio','Ortiz','jortiz','jortiz@virtual.edu','password17','5556789','Avenida Virtual 567','17');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('18','Carla','Castillo','ccastillo','ccastillo@bellasartes.edu','password18','5559012','Bulevar Artístico 890','18');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('19','Ricardo','Navarro','rnavarro','rnavarro@liderazgo.edu','password19','5554567','Calle Empresarial 345','19');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('20','Valentina','Aguilar','vaguilar','vaguilar@danza.edu','password20','5557890','Plaza del Ballet 678','20');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('21','Jorge','Vargas','jvargas','jvargas@tecnico.edu','password21','5550123','Avenida Industrial 901','21');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('22','Gabriela','Herrera','gherrera','gherrera@ciencias.edu','password22','5556789','Ruta Científica 234','22');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('23','Tomás','Gutiérrez','tgutierrez','tgutierrez@deportes.edu','password23','5552345','Calle Olímpica 567','23');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('24','Mariana','Rojas','mrojas','mrojas@negocios.edu','password24','5557890','Avenida Empresarial 890','24');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('25','Santiago','Flores','sflores','sflores@cocina.edu','password25','5553456','Plaza Gastronómica 345','25');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('26','Valeria','Mendoza','vmendoza','vmendoza@diseno.edu','password26','5558901','Calle Creativa 678','26');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('27','David','Castro','dcastro','dcastro@idiomas.edu','password27','5552345','Avenida Lingüística 901','27');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('28','Camila','Núñez','cnunez','cnunez@tecnologica.edu','password28','5557890','Bulevar Innovador 234','28');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('29','Alejandro','Molina','amolina','amolina@artesescenicas.edu','password29','5550123','Plaza del Espectáculo 567','29');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('30','Rebeca','Ríos','rrios','rrios@computacion.edu','password30','5556789','Avenida Digital 890','30');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('31','Martín','Ramos','mramos','mramos@formaciondocente.edu','password31','5559012','Calle Pedagógica 345','31');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('32','Luciana','Vega','lvega','lvega@robotica.edu','password32','5554567','Bulevar Tecnológico 678','32');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('33','Daniel','Salazar','dsalazar','dsalazar@artesvisuales.edu','password33','5557890','Plaza Artística 901','33');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('34','Carolina','Mora','cmora','cmora@musica.edu','password34','5553456','Avenida Melódica 234','34');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('35','Sebastián','Muñoz','smunoz','smunoz@cine.edu','password35','5558901','Calle del Cine 567','35');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('36','Natalia','Contreras','ncontreras','ncontreras@periodismo.edu','password36','5552345','Avenida Informativa 890','36');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('37','Matías','Fuentes','mfuentes','mfuentes@fotografia.edu','password37','5557890','Plaza del Lente 345','37');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('38','Renata','Espinoza','respinoza','respinoza@diseno-interiores.edu','password38','5550123','Bulevar Estético 678','38');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('39','Emilio','Romero','eromero','eromero@moda.edu','password39','5556789','Calle de la Moda 901','39');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('40','Antonella','Mendoza','amendoza','amendoza@turismo.edu','password40','5559012','Avenida del Viajero 234','40');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('41','Isabel','Lara','ilara','ilara@universidad.edu','password41','5551234','Calle Principal 123','1');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('42','Raúl','Ponce','rponce','rponce@universidad.edu','password42','5551234','Calle Principal 123','1');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('43','Mónica','Robles','mrobles','mrobles@colegio.edu','password43','5557890','Avenida Secundaria 456','2');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('44','Fernando','Tapia','ftapia','ftapia@colegio.edu','password44','5557890','Avenida Secundaria 456','2');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('45','Catalina','Soto','csoto','csoto@idiomas.edu','password45','5559876','Plaza Central 789','3');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('46','Leonardo','Valdivia','lvaldivia','lvaldivia@idiomas.edu','password46','5559876','Plaza Central 789','3');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('47','Florencia','Núñez','fnunez','fnunez@primaria.edu','password47','5553456','Avenida del Parque 234','4');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('48','Ignacio','Olivares','iolivares','iolivares@primaria.edu','password48','5553456','Avenida del Parque 234','4');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('49','Julieta','Parra','jparra','jparra@arte.edu','password49','5556789','Bulevar de las Artes 567','5');
+Insert into EDUQUIZ.DOCENTES (IDDOCENTE,NOMBRE,APELLIDO,USUARIO,CORREO_ELECTRONICO,PASSWORD,TELEFONO,DIRECCION,IDINSTITUCION) values ('50','Maximiliano','Quintana','mquintana','mquintana@arte.edu','password50','5556789','Bulevar de las Artes 567','5');
 REM INSERTING into EDUQUIZ.EDIFICIOS
 SET DEFINE OFF;
 REM INSERTING into EDUQUIZ.ESTADOS
@@ -394,6 +490,46 @@ REM INSERTING into EDUQUIZ.HORARIOS
 SET DEFINE OFF;
 REM INSERTING into EDUQUIZ.INSTITUCIONES
 SET DEFINE OFF;
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('1','Universidad Nacional','Universidad pública de prestigio','Avenida Principal 123','3145551234');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('2','Colegio Técnico','Institución de educación técnica','Calle Secundaria 456','3235557890');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('3','Academia de Idiomas','Centro de enseñanza de idiomas','Plaza Central 789','3135559876');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('4','Escuela Primaria N°1','Educación básica primaria','Avenida del Parque 234','3115553456');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('6','Universidad Privada','Institución universitaria privada','Calle Principal 890','3045558901');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('7','Colegio Bilingüe','Enseñanza en dos idiomas','Avenida Internacional 345','3155552345');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('8','Centro de Capacitación','Cursos de formación profesional','Calle Comercial 678','3165557678');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('9','Escuela Secundaria N°2','Educación media secundaria','Bulevar Estudiantil 901','3155559012');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('10','Instituto Tecnológico','Formación en carreras tecnológicas','Avenida Tecnológica 234','3035554567');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('11','Academia de Música','Enseñanza de música y artes escénicas','Plaza de la Música 567','3235557890');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('13','Universidad Agrícola','Institución especializada en agronomía','Ruta Rural 345','3135556789');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('14','Escuela de Artes y Oficios','Formación en oficios y manualidades','Avenida Artesanal 678','3175552345');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('16','Colegio Técnico N°3','Institución de educación técnica','Calle Industrial 234','3175553456');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('17','Universidad Virtual','Educación en línea y a distancia','Avenida Virtual 567','3255556789');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('19','Instituto de Liderazgo','Desarrollo de habilidades de liderazgo','Calle Empresarial 345','3235554567');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('21','Colegio Técnico N°4','Institución de educación técnica','Avenida Industrial 901','3165550123');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('23','Escuela de Deportes','Formación en disciplinas deportivas','Calle Olímpica 567','3045552345');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('24','Instituto de Negocios','Educación en administración y negocios','Avenida Empresarial 890','3255557890');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('27','Escuela de Idiomas','Enseñanza intensiva de idiomas','Avenida Lingüística 901','3165552345');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('29','Colegio de Artes Escénicas','Formación en teatro, danza y música','Plaza del Espectáculo 567','3175550123');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('31','Escuela de Formación Docente','Preparación de futuros maestros','Calle Pedagógica 345','3235559012');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('33','Universidad de Artes Visuales','Institución dedicada a las bellas artes','Plaza Artística 901','3175557890');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('34','Colegio de Música','Formación musical integral','Avenida Melódica 234','3175553456');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('36','Escuela de Periodismo','Preparación de futuros periodistas','Avenida Informativa 890','3155552345');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('37','Academia de Fotografía','Enseñanza de técnicas fotográficas','Plaza del Lente 345','3235557890');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('5','Instituto de Arte','Formación en artes visuales','Bulevar de las Artes 567','3045556789');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('12','Colegio Montessori','Educación basada en método Montessori','Calle Alternativa 890','3255550123');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('15','Instituto de Idiomas','Centro de enseñanza de lenguas','Plaza Internacional 901','3165557890');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('22','Universidad de Ciencias','Institución de ciencias naturales','Ruta Científica 234','3045556789');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('18','Escuela de Bellas Artes','Formación en artes visuales','Bulevar Artístico 890','3235559012');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('20','Academia de Danza','Enseñanza de danza','Plaza del Ballet 678','3135557890');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('28','Universidad Tecnológica','Institución de ingenieria/tecnología','Bulevar Innovador 234','3185557890');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('25','Academia de Cocina','Enseñanza de gastronomía/culinaria','Plaza Gastronómica 345','3235553456');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('26','Instituto de Diseño','Formación en diseño gráfico','Calle Creativa 678','3155558901');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('30','Instituto de Computación','Educación en programación/informatica','Avenida Digital 890','3185556789');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('32','Academia de Robótica','Enseñanza de robótica/automatización','Bulevar Tecnológico 678','3175554567');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('35','Instituto de Cinematografía','Educación en cine y producción','Calle del Cine 567','3165558901');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('38','Colegio de Diseño de Interiores','Formación en decoración e interiores','Bulevar Estético 678','3235550123');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('39','Universidad de Moda','Institución de diseño de moda','Calle de la Moda 901','3155556789');
+Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('40','Instituto de Turismo','Educación de turismo y hotelería','Avenida del Viajero 234','3165559012');
 REM INSERTING into EDUQUIZ.LUGARES
 SET DEFINE OFF;
 REM INSERTING into EDUQUIZ.MATERIAS
