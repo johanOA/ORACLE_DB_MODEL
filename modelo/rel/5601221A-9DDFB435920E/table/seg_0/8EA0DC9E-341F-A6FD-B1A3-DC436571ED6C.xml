@@ -26,8 +26,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>40 BYTE</dataTypeSize>
-<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<dataTypeSize>60 BYTE</dataTypeSize>
+<ownDataTypeParameters>60 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="descripcion" id="3CC4BB34-D0FC-AECC-9FD1-7831D3D24421">
@@ -38,8 +38,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>40 BYTE</dataTypeSize>
-<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<dataTypeSize>60 BYTE</dataTypeSize>
+<ownDataTypeParameters>60 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="idDocente" id="54CB8637-0650-F29F-02B3-4C7C05ABF46D">
@@ -60,6 +60,7 @@
 <createdBy>ospin</createdBy>
 <createdTime>2024-03-27 15:18:38 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
