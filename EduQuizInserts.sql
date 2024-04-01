@@ -536,3 +536,6 @@ INSERT INTO EDUQUIZ.TEMAS (IDTEMA, NOMBRE, DESCRIPCION, IDCONTENIDO) VALUES (37,
 INSERT INTO EDUQUIZ.TEMAS (IDTEMA, NOMBRE, DESCRIPCION, IDCONTENIDO) VALUES (38, 'Comprensión Auditiva de Diversos Acentos y Velocidades', 'Comprensión auditiva de diferentes acentos del inglés y variaciones en la velocidad del habla', 23);
 INSERT INTO EDUQUIZ.TEMAS (IDTEMA, NOMBRE, DESCRIPCION, IDCONTENIDO) VALUES (39, 'Técnica de Respiración en Natación', 'Se enfoca en la técnica de respiración adecuada durante la natación', 24);
 INSERT INTO EDUQUIZ.TEMAS (IDTEMA, NOMBRE, DESCRIPCION, IDCONTENIDO) VALUES (40, 'Perfeccionamiento de los Estilos de Natación', 'Se abordan técnicas avanzadas para perfeccionar los estilos de natación', 24);
+
+Insert into EDUQUIZ.ESTADOS (IDESTADO,DESCRIPCION) values ('1','Publico');
+Insert into EDUQUIZ.ESTADOS (IDESTADO,DESCRIPCION) values ('2','Privado');
