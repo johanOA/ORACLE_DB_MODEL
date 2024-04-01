@@ -310,8 +310,8 @@
 
   CREATE TABLE "EDUQUIZ"."TEMAS" 
    (	"IDTEMA" NUMBER(*,0), 
-	"NOMBRE" VARCHAR2(40 BYTE), 
-	"DESCRIPCION" VARCHAR2(40 BYTE), 
+	"NOMBRE" VARCHAR2(60 BYTE), 
+	"DESCRIPCION" VARCHAR2(100 BYTE), 
 	"IDCONTENIDO" NUMBER(*,0)
    ) SEGMENT CREATION IMMEDIATE 
   PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
@@ -834,6 +834,46 @@ Insert into EDUQUIZ.SALONES (IDSALON,DESCRIPCION) values ('49','Aula 120');
 Insert into EDUQUIZ.SALONES (IDSALON,DESCRIPCION) values ('50','Sala de Estudio 2');
 REM INSERTING into EDUQUIZ.TEMAS
 SET DEFINE OFF;
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('1','El Siglo de Oro Español','Explora la época dorada de la literatura española','4');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('2','El Modernismo en la Literatura Española','Analiza el movimiento literario del modernismo en España','4');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('3','Literatura en la Edad Media española','Literatura de la Edad Media en España,la influencia de la cultura árabe y judía','5');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('4','La prosa del Siglo de Oro','Riqueza y diversidad de la prosa en el Siglo de Oro español','6');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('5','El teatro del Siglo de Oro','Brillantez y la diversidad del teatro español durante el Siglo de Oro','6');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('6','Conceptos Fundamentales de la Mecánica Clásica','Principios básicos de la mecánica clásica, la cinemática, dinámica y estática','7');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('7','Leyes de Newton y sus Aplicaciones','Las tres leyes del movimiento de Newton y su relevancia en la descripción de los sistemas físicos','7');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('8','Primera Ley de Newton: Ley de la Inercia','La primera ley del movimiento de Newton, también conocida como ley de la inercia.','8');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('9','Segunda y Tercera Ley de Newton: Fuerza y Acción-Reacción','Las dos últimas leyes del movimiento de Newton','8');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('10','Concepto de Trabajo en Física','Concepto de trabajo en física','9');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('11','Tipos de Energía y su Transformación','Los diferentes tipos de energía, como la cinética, potencial,etc','9');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('12','Estructura y Nomenclatura de Compuestos Orgánicos','Fundamentos de la química orgánica','10');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('13','Enlace Químico en Compuestos Orgánicos','Los diferentes tipos de enlaces químicos presentes en los compuestos orgánicos','10');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('14','Clasificación de las Reacciones Orgánicas','Clasificación de las reacciones orgánicas según diferentes criterios','11');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('15','Mecanismos de Reacción en Química Orgánica','Los mecanismos de reacción que gobiernan el curso de las transformaciones químicas','11');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('16','Estructura y Función de la Membrana Celular','Estructura fundamental en la biología celular','12');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('17','Organelos Celulares y sus Funciones','Los distintos organelos celulares y sus funciones específicas dentro de la célula','12');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('18','Estructura y Función del Núcleo Celular','Este tema se enfoca en el núcleo celular','13');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('19','Exploración de los Organelos Citoplasmáticos','Los organelos citoplasmáticos que se encuentran fuera del núcleo en la célula eucariota','13');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('20','Metabolismo Celular: Anabolismo y Catabolismo','Procesos metabólicos fundamentales en las células','14');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('21','Comunicación Celular: Señalización y Transducción','Comunicación entre células y cómo las células perciben y responden a señales','14');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('22','Principales Civilizaciones de la Antigüedad','Visión general de las principales civilizaciones de la antigüedada','15');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('23','Desarrollo y Difusión de la Escritura en la Antigüedad','Se analiza el desarrollo y la difusión de la escritura en la antigüedad','15');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('25','La Grecia Antigua: Cuna de la Civilización Mediterránea','Se examina la civilización griega y su impacto en el Mediterráneo antiguo','16');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('24','La Civilización Egipcia: Potencia del Antiguo Mediterráneo','La Grecia Antigua: Cuna de la Civilización Mediterránea','16');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('26','El Imperio Chino: De la Antigüedad hasta la Dinastía Qing','La historia del imperio chino desde sus orígenes hasta la dinastía Qing','17');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('27','El Imperio Japonés: Del Período Heian al Shogunato','La historia del imperio japonés desde el período Heian hasta el shogunato','17');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('28','Los Procesos Geológicos: Tectónica de Placas y relieve','los procesos geológicos que dan forma a la superficie terrestre','18');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('29','Climatología y Biogeografía: Factores y Zonas Climáticas','Se analizan los factores que influyen en el clima terrestre','18');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('30','Formas de relieve producidas por agentes endógenos','Se centra en las formas de relieve terrestre que son el resultado de procesos endógenos','19');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('31','Formas de relieve producidas por agentes exógenos','Se estudian las formas de relieve terrestre que son el resultado de procesos exógenos','19');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('32','Factores que Influencian el Clima','Se centra en los diversos factores que influyen en el clima de una región','20');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('33','Saludos y Presentaciones en Inglés','Las formas adecuadas de saludar y presentarse en inglés','21');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('34','Números y Fechas en Inglés','Se exploran los números y las fechas en inglés','21');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('35','Uso Avanzado de los Tiempos Verbales','Se enfoca en el uso avanzado de los tiempos verbales en inglés','22');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('36','Construcción de Oraciones Complejas y Sintaxis','Se abordan las técnicas para construir oraciones complejas y estructuras sintácticas avanzadas.','22');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('37','Práctica de Conversación en Situaciones Cotidianas','Se centra en la práctica de la conversación en inglés en situaciones cotidianas','23');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('38','Comprensión Auditiva de Diversos Acentos y Velocidades','Comprensión auditiva de diferentes acentos del inglés y variaciones en la velocidad del habla','23');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('39','Técnica de Respiración en Natación','Se enfoca en la técnica de respiración adecuada durante la natación','24');
+Insert into EDUQUIZ.TEMAS (IDTEMA,NOMBRE,DESCRIPCION,IDCONTENIDO) values ('40','Perfeccionamiento de los Estilos de Natación','Se abordan técnicas avanzadas para perfeccionar los estilos de natación','24');
 REM INSERTING into EDUQUIZ.TEMAS_EXAMENES
 SET DEFINE OFF;
 REM INSERTING into EDUQUIZ.TIPOSPREGUNTAS
@@ -1198,6 +1238,8 @@ Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERI
 --  Constraints for Table TEMAS
 --------------------------------------------------------
 
+  ALTER TABLE "EDUQUIZ"."TEMAS" MODIFY ("DESCRIPCION" NOT NULL ENABLE);
+  ALTER TABLE "EDUQUIZ"."TEMAS" MODIFY ("NOMBRE" NOT NULL ENABLE);
   ALTER TABLE "EDUQUIZ"."TEMAS" ADD CONSTRAINT "TEMAS_PK" PRIMARY KEY ("IDTEMA")
   USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
   STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645

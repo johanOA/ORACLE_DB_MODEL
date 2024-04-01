@@ -51,7 +51,7 @@
 <ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="correo_electronico " id="90F6F0D9-27CF-3E60-26D7-B89348E6F404">
+<Column name="email" id="90F6F0D9-27CF-3E60-26D7-B89348E6F404">
 <createdBy>ospin</createdBy>
 <createdTime>2024-03-08 16:56:30 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
