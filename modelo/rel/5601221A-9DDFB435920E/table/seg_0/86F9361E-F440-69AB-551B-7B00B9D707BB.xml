@@ -59,7 +59,7 @@
 <colUsage columnID="5387C40D-B162-6AE7-8291-D5A116E6AA56"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="60478903-A40A-64BA-1C84-1B61AD37FE69" name="Asignaciones_Preguntas_Estudiantes_FK">
+<ind_PK_UK id="60478903-A40A-64BA-1C84-1B61AD37FE69" name="Asig_Preg_Estud_FK">
 <createdBy>ospin</createdBy>
 <createdTime>2024-03-27 14:47:16 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
@@ -69,7 +69,7 @@
 <colUsage columnID="1F0C4249-8FDC-2500-F25A-2BF86EEE240D"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="54D52B7B-BC03-D93C-BD2E-B757CFD0A084" name="Asignaciones_Preguntas_Preguntas_FK">
+<ind_PK_UK id="54D52B7B-BC03-D93C-BD2E-B757CFD0A084" name="Asig_Preg_Preg_FK">
 <createdBy>ospin</createdBy>
 <createdTime>2024-03-27 14:47:28 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>

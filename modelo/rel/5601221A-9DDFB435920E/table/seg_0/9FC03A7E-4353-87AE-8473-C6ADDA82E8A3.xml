@@ -99,7 +99,7 @@
 <colUsage columnID="05F564A5-3A6B-7B1C-A6FE-E0ECA571CF9A"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="2FA75E87-612D-0F42-B279-94D5E4602F5C" name="Asignaciones_Estudiantes_Estudiantes_FK">
+<ind_PK_UK id="2FA75E87-612D-0F42-B279-94D5E4602F5C" name="Asig_Estud_Estud_FK">
 <createdBy>ospin</createdBy>
 <createdTime>2024-03-13 15:05:19 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
@@ -109,7 +109,7 @@
 <colUsage columnID="EFAF77EB-C207-8E7E-AFC3-7ECCE5059C3D"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="5DC17F70-EB33-C372-AD02-02FD3780700F" name="Asignaciones_Estudiantes_Examenes_FK">
+<ind_PK_UK id="5DC17F70-EB33-C372-AD02-02FD3780700F" name="Asig_Estud_Exam_FK">
 <createdBy>ospin</createdBy>
 <createdTime>2024-03-13 15:05:47 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>

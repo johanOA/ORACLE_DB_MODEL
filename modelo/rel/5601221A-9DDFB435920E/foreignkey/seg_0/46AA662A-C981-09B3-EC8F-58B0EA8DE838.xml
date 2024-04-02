@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="46AA662A-C981-09B3-EC8F-58B0EA8DE838" containerWithKeyObject="8BC6158D-F35D-E47E-E8A4-33CD0C3F46B3" localFKIndex="B29D6839-8809-8BD0-822F-CCA47A7F2246" name="Respuestas_Estudiantes_Examenes_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="46AA662A-C981-09B3-EC8F-58B0EA8DE838" containerWithKeyObject="8BC6158D-F35D-E47E-E8A4-33CD0C3F46B3" localFKIndex="B29D6839-8809-8BD0-822F-CCA47A7F2246" name="Resp_Estud_Exam_FK">
 <createdBy>ospin</createdBy>
 <createdTime>2024-03-27 14:51:17 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>

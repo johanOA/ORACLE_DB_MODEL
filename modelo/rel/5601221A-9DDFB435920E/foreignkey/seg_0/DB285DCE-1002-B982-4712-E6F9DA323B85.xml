@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="54C6C67E-8AA1-52D3-5192-5D66EC9B5BBE" containerWithKeyObject="0F17F6F8-C07A-AE0C-1657-1A7371F79CA2" localFKIndex="5B53912B-1504-CEC8-0684-96172E613283" name="BancosPreguntas_Preguntas_FK">
-<createdBy>ospin</createdBy>
-<createdTime>2024-03-27 14:43:06 UTC</createdTime>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DB285DCE-1002-B982-4712-E6F9DA323B85" containerWithKeyObject="BD9C9619-9E93-4F7B-E34B-6D402167F912" localFKIndex="A9B3EE85-8124-C9B2-2A9B-BDDA3D95551B" name="BancoPreguntas_Preguntas_FK">
+<createdBy>user</createdBy>
+<createdTime>2024-04-02 02:36:03 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
 <referredTableLongName>Preguntas</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>

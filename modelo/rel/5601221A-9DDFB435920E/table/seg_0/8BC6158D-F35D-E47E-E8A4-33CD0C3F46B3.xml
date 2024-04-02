@@ -87,7 +87,7 @@
 <colUsage columnID="CC47A610-B275-870F-4650-7CB94CD7543C"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="D0EBD215-0B9B-3A07-E95C-D841F7B12AAD" name="Respuestas_Estudiantes_Estudiantes_FK">
+<ind_PK_UK id="D0EBD215-0B9B-3A07-E95C-D841F7B12AAD" name="Resp_Estud_Estud_FK">
 <createdBy>ospin</createdBy>
 <createdTime>2024-03-27 14:50:46 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
@@ -97,7 +97,7 @@
 <colUsage columnID="EC32FFC6-CED4-9058-F27A-02614E7AADB0"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="B29D6839-8809-8BD0-822F-CCA47A7F2246" name="Respuestas_Estudiantes_Examenes_FK">
+<ind_PK_UK id="B29D6839-8809-8BD0-822F-CCA47A7F2246" name="Resp_Estud_Exam_FK">
 <createdBy>ospin</createdBy>
 <createdTime>2024-03-27 14:51:17 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
@@ -107,7 +107,7 @@
 <colUsage columnID="E74F87B3-EA1C-5082-BAE3-047FB126EE0D"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="AFEE332F-9F04-7A10-0267-679CA817B823" name="Respuestas_Estudiantes_Preguntas_FK">
+<ind_PK_UK id="AFEE332F-9F04-7A10-0267-679CA817B823" name="Resp_Estud_Preg_FK">
 <createdBy>ospin</createdBy>
 <createdTime>2024-03-27 14:52:45 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
@@ -117,7 +117,7 @@
 <colUsage columnID="FB9E23BE-CF8B-EE5C-AB61-E8EED19F2882"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="2CADC126-5805-3D37-E16E-2E94E65FB8DF" name="Respuestas_Estudiantes_Respuestas_FK">
+<ind_PK_UK id="2CADC126-5805-3D37-E16E-2E94E65FB8DF" name="Resp_Estud_Resp_FK">
 <createdBy>ospin</createdBy>
 <createdTime>2024-03-27 14:55:07 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>

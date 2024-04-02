@@ -25,8 +25,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>40 BYTE</dataTypeSize>
-<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<dataTypeSize>70 BYTE</dataTypeSize>
+<ownDataTypeParameters>70 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="correcta" id="61DCF4C8-AA2C-DE6A-41DF-27A8E2E56A4C">

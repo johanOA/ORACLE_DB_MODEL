@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 21.2.0.165.1515
---   en:        2024-03-30 09:26:26 COT
+--   en:        2024-04-01 21:42:46 COT
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -39,16 +39,16 @@ CREATE TABLE asignaciones_preguntas (
 ALTER TABLE asignaciones_preguntas ADD CONSTRAINT asignaciones_preguntas_pk PRIMARY KEY ( idasignacion );
 
 CREATE TABLE bancopreguntas (
-    idbanco     INTEGER NOT NULL,
-    idexamenes  INTEGER NOT NULL,
-    idpreguntas INTEGER NOT NULL
+    idbanco              INTEGER NOT NULL,
+    preguntas_idpregunta INTEGER NOT NULL,
+    examenes_idexamenen  INTEGER NOT NULL
 );
 
-ALTER TABLE bancopreguntas ADD CONSTRAINT bancospreguntas_pk PRIMARY KEY ( idbanco );
+ALTER TABLE bancopreguntas ADD CONSTRAINT bancopreguntas_pk PRIMARY KEY ( idbanco );
 
 CREATE TABLE contenidos (
     idcontenido     INTEGER NOT NULL,
-    descricontenido VARCHAR2(40 BYTE) NOT NULL,
+    descricontenido VARCHAR2(60 BYTE) NOT NULL,
     idunidad        INTEGER NOT NULL
 );
 
@@ -56,8 +56,8 @@ ALTER TABLE contenidos ADD CONSTRAINT contenidos_pk PRIMARY KEY ( idcontenido );
 
 CREATE TABLE cursos (
     idcurso     INTEGER NOT NULL,
-    nombrecurso VARCHAR2(40 BYTE),
-    descripcion VARCHAR2(40 BYTE),
+    nombrecurso VARCHAR2(60 BYTE),
+    descripcion VARCHAR2(60 BYTE),
     iddocente   INTEGER NOT NULL,
     idmateria   INTEGER NOT NULL
 );
@@ -100,22 +100,22 @@ CREATE TABLE estados (
 ALTER TABLE estados ADD CONSTRAINT estados_pk PRIMARY KEY ( idestado );
 
 CREATE TABLE estudiantes (
-    idestudiante          INTEGER NOT NULL,
-    nombre                VARCHAR2(40 BYTE) NOT NULL,
-    apellido              VARCHAR2(40 BYTE) NOT NULL,
-    usuario               VARCHAR2(40 BYTE) NOT NULL,
-    "correo_electronico " VARCHAR2(40 BYTE) NOT NULL,
-    password              VARCHAR2(40 BYTE) NOT NULL,
-    telefono              INTEGER,
-    idcurso               INTEGER NOT NULL,
-    idgrupo               INTEGER NOT NULL
+    idestudiante INTEGER NOT NULL,
+    nombre       VARCHAR2(40 BYTE) NOT NULL,
+    apellido     VARCHAR2(40 BYTE) NOT NULL,
+    usuario      VARCHAR2(40 BYTE) NOT NULL,
+    email        VARCHAR2(40 BYTE) NOT NULL,
+    password     VARCHAR2(40 BYTE) NOT NULL,
+    telefono     INTEGER,
+    idcurso      INTEGER NOT NULL,
+    idgrupo      INTEGER NOT NULL
 );
 
 ALTER TABLE estudiantes ADD CONSTRAINT estudiantes_pk PRIMARY KEY ( idestudiante );
 
 CREATE TABLE examenes (
     idexamenen         INTEGER NOT NULL,
-    titulo             VARCHAR2(40 BYTE) NOT NULL,
+    titulo             VARCHAR2(80 BYTE) NOT NULL,
     fechayhoracreacion DATE NOT NULL,
     duracionexamen     INTEGER NOT NULL,
     cantidadpreguntas  INTEGER,
@@ -164,16 +164,15 @@ ALTER TABLE lugares ADD CONSTRAINT lugares_pk PRIMARY KEY ( idlugar );
 
 CREATE TABLE materias (
     idmateria   INTEGER NOT NULL,
-    nombre      INTEGER NOT NULL,
-    descripcion INTEGER NOT NULL
+    nombre      VARCHAR2(60) NOT NULL,
+    descripcion VARCHAR2(60) NOT NULL
 );
 
 ALTER TABLE materias ADD CONSTRAINT materias_pk PRIMARY KEY ( idmateria );
 
 CREATE TABLE preguntas (
     idpregunta     INTEGER NOT NULL,
-    enunciado      VARCHAR2(40 BYTE) NOT NULL,
-    idexamenes     INTEGER NOT NULL,
+    enunciado      VARCHAR2(100 BYTE) NOT NULL,
     idtema         INTEGER NOT NULL,
     idestado       INTEGER NOT NULL,
     idtipopregunta INTEGER NOT NULL
@@ -183,7 +182,7 @@ ALTER TABLE preguntas ADD CONSTRAINT preguntas_pk PRIMARY KEY ( idpregunta );
 
 CREATE TABLE respuestas (
     idrespuesta     INTEGER NOT NULL,
-    opcionrespuesta VARCHAR2(40 BYTE) NOT NULL,
+    opcionrespuesta VARCHAR2(70 BYTE) NOT NULL,
     correcta        VARCHAR2(40 BYTE) NOT NULL,
     idpreguntas     INTEGER NOT NULL
 );
@@ -209,8 +208,8 @@ ALTER TABLE salones ADD CONSTRAINT salones_pk PRIMARY KEY ( idsalon );
 
 CREATE TABLE temas (
     idtema      INTEGER NOT NULL,
-    nombre      VARCHAR2(40 BYTE),
-    descripcion VARCHAR2(40 BYTE),
+    nombre      VARCHAR2(60 BYTE) NOT NULL,
+    descripcion VARCHAR2(100 BYTE) NOT NULL,
     idcontenido INTEGER NOT NULL
 );
 
@@ -269,11 +268,11 @@ ALTER TABLE asignacion_dias
         REFERENCES lugares ( idlugar );
 
 ALTER TABLE bancopreguntas
-    ADD CONSTRAINT bancospreguntas_examenes_fk FOREIGN KEY ( idexamenes )
+    ADD CONSTRAINT bancopreguntas_examenes_fk FOREIGN KEY ( examenes_idexamenen )
         REFERENCES examenes ( idexamenen );
 
 ALTER TABLE bancopreguntas
-    ADD CONSTRAINT bancospreguntas_preguntas_fk FOREIGN KEY ( idpreguntas )
+    ADD CONSTRAINT bancopreguntas_preguntas_fk FOREIGN KEY ( preguntas_idpregunta )
         REFERENCES preguntas ( idpregunta );
 
 ALTER TABLE contenidos
