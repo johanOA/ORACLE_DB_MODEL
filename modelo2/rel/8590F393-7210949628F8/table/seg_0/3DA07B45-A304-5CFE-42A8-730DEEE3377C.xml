@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3DA07B45-A304-5CFE-42A8-730DEEE3377C" name="Lugares">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:00:25 UTC</createdTime>
+<ownerDesignName>modelo2</ownerDesignName>
+<importedID>8C218142-16AB-4DDE-65A4-1A066AE4C0F4</importedID>
+<ordsAlias>table_23</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idLugar" id="8D444F41-8436-D5BF-2924-D32B390BECD6">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:00:25 UTC</createdTime>
+<ownerDesignName>modelo2</ownerDesignName>
+<importedID>37207862-E266-78D0-6852-A86B71E6E176</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="idEdificio" id="A94A1C95-2ED9-32F4-3CC5-9CF57A88037E">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:00:25 UTC</createdTime>
+<ownerDesignName>modelo2</ownerDesignName>
+<importedID>2C26EEFF-AF9D-EC6E-1D88-DB6789E42F20</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9DD0F7AD-81CF-989D-5302-6EE962542264" referredColumn="9E2D54D3-1443-7C5E-0011-F9D343A88F0A"/>
+</associations>
+</Column>
+<Column name="idSalon" id="442D16DC-CB0A-9F23-8752-25D0593137AB">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:00:25 UTC</createdTime>
+<ownerDesignName>modelo2</ownerDesignName>
+<importedID>1CE12B8D-0E98-CF77-6625-B6174DD5854C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="77AA370C-711D-4E1F-1001-110CB9C1FD63" referredColumn="B795034E-4C70-D8D1-8B3E-8D4B66433765"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FE3A5893-8EA1-E793-6C5A-0206A84A432B" name="Lugares_PK">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:00:25 UTC</createdTime>
+<ownerDesignName>modelo2</ownerDesignName>
+<importedID>266BB4BF-F0CB-3087-C899-40B98C7AE4A7</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D444F41-8436-D5BF-2924-D32B390BECD6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2101DE44-992C-8F95-35F5-9A87A332C303" name="Lugares_Salones_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:00:25 UTC</createdTime>
+<ownerDesignName>modelo2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="442D16DC-CB0A-9F23-8752-25D0593137AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AFEA97F5-C0F7-DC48-4639-F5A7D68584D6" name="Lugares_Edificios_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:00:25 UTC</createdTime>
+<ownerDesignName>modelo2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A94A1C95-2ED9-32F4-3CC5-9CF57A88037E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

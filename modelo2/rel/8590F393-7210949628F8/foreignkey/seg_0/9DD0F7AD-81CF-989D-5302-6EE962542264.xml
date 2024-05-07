@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9DD0F7AD-81CF-989D-5302-6EE962542264" containerWithKeyObject="3DA07B45-A304-5CFE-42A8-730DEEE3377C" localFKIndex="AFEA97F5-C0F7-DC48-4639-F5A7D68584D6" name="Lugares_Edificios_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:00:25 UTC</createdTime>
+<ownerDesignName>modelo2</ownerDesignName>
+<importedID>BF6DA4DB-400E-12EC-E889-BE8D3DC2E624</importedID>
+<referredTableLongName>Edificios</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DE53D808-9AA3-BAD9-AEE8-12B7C888E16C</referredTableID>
+<keyObject>CC9B9CCD-24C1-AD9F-E524-B38B2F56A5F6</keyObject>
+<referredKeyID>CC9B9CCD-24C1-AD9F-E524-B38B2F56A5F6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idEdificio</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

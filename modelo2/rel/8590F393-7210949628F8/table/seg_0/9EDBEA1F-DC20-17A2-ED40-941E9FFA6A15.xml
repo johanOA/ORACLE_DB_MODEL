@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9EDBEA1F-DC20-17A2-ED40-941E9FFA6A15" name="Temas">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:00:25 UTC</createdTime>
+<ownerDesignName>modelo2</ownerDesignName>
+<importedID>E18C86C3-B46D-BB48-FF46-D6471D52530E</importedID>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idTema" id="B5A537CC-BBE0-4A79-5D59-435F86C5B875">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:00:25 UTC</createdTime>
+<ownerDesignName>modelo2</ownerDesignName>
+<importedID>8F223DB7-1271-7AFB-5A4B-743C2C091E7F</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="600334F5-4B5E-6C2F-A368-807F2E86DB38">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:00:25 UTC</createdTime>
+<ownerDesignName>modelo2</ownerDesignName>
+<importedID>DE946E59-23ED-7EE0-437C-AF4EE113EA4A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60 BYTE</dataTypeSize>
+<ownDataTypeParameters>60 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="8D75B682-D6E4-1067-5036-91B234A3A3F7">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:00:25 UTC</createdTime>
+<ownerDesignName>modelo2</ownerDesignName>
+<importedID>458BAD77-D677-EBE4-D2F2-E43E78DF4905</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="idContenido" id="53A935FD-53D4-65BF-F1BB-2A4CD1B5D815">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:00:25 UTC</createdTime>
+<ownerDesignName>modelo2</ownerDesignName>
+<importedID>D77E3944-D4B1-77FE-F1CB-758CE8A8CFF4</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D0177025-E1B1-B2C2-91B3-209E0D696258" referredColumn="846248EB-1C35-508B-4679-2619E586D1AC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AAA0BFF2-7DC3-C5FD-C905-9502D1563C30" name="Temas_PK">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:00:25 UTC</createdTime>
+<ownerDesignName>modelo2</ownerDesignName>
+<importedID>E7BD6F7F-BD7E-4715-6F36-4C7BDEB16BAB</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B5A537CC-BBE0-4A79-5D59-435F86C5B875"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F61208AC-EBFD-DA51-A529-EF95B8BD336A" name="Temas_Contenidos_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:00:25 UTC</createdTime>
+<ownerDesignName>modelo2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53A935FD-53D4-65BF-F1BB-2A4CD1B5D815"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="22F10A57-862E-7B99-B06E-1B32CBA7677B" containerWithKeyObject="D15ED5D8-67C7-A640-C438-39F1E84B7D37" localFKIndex="90EB8292-567A-2A1C-35E5-6011E6F11D6A" name="BancoPreguntas_Examenes_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:00:25 UTC</createdTime>
+<ownerDesignName>modelo2</ownerDesignName>
+<importedID>32803AC0-E505-75F8-E4CF-575BF322A02A</importedID>
+<referredTableLongName>Examenes</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>016DC9D7-87E7-1CFF-24FD-51FFA32DD213</referredTableID>
+<keyObject>ACA44830-3A22-5603-968E-C4727F791088</keyObject>
+<referredKeyID>ACA44830-3A22-5603-968E-C4727F791088</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idExamenen</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

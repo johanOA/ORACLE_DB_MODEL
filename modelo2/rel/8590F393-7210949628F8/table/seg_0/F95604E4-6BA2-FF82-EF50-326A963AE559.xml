@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F95604E4-6BA2-FF82-EF50-326A963AE559" name="Respuestas_Estudiantes">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:00:25 UTC</createdTime>
+<ownerDesignName>modelo2</ownerDesignName>
+<importedID>8BC6158D-F35D-E47E-E8A4-33CD0C3F46B3</importedID>
+<ordsAlias>table_27</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idRespuestaEstudiante" id="84E37F22-F8D7-896A-5281-6F57FCF649A4">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:00:25 UTC</createdTime>
+<ownerDesignName>modelo2</ownerDesignName>
+<importedID>CC47A610-B275-870F-4650-7CB94CD7543C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="idEstudiante" id="A5BCBC61-5CB2-B802-80AA-58596DEC9077">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:00:25 UTC</createdTime>
+<ownerDesignName>modelo2</ownerDesignName>
+<importedID>EC32FFC6-CED4-9058-F27A-02614E7AADB0</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="500395FA-4E43-D8E4-AB86-16A4ECB1618A" referredColumn="46B6D9C3-742B-1C71-B1BF-60742EC26765"/>
+</associations>
+</Column>
+<Column name="idExamenes" id="2A9D1794-C071-0325-1989-CD4CF9C1C9A3">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:00:25 UTC</createdTime>
+<ownerDesignName>modelo2</ownerDesignName>
+<importedID>E74F87B3-EA1C-5082-BAE3-047FB126EE0D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DC310C1E-637C-AADF-0D31-D9324D48850F" referredColumn="CB61FCF6-5E8E-A5C2-DB76-B21AE8E242DD"/>
+</associations>
+</Column>
+<Column name="idPreguntas" id="56775FBF-E0E6-AFE7-3958-89F61560AF84">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:00:25 UTC</createdTime>
+<ownerDesignName>modelo2</ownerDesignName>
+<importedID>FB9E23BE-CF8B-EE5C-AB61-E8EED19F2882</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B39EA8DA-4A0B-8FB6-1935-9DA7F9870C7A" referredColumn="D1D4B5F1-ED16-F301-5571-F6C774B9176F"/>
+</associations>
+</Column>
+<Column name="idRespuesta" id="7C614FC6-A5F5-1922-2012-04C8832D3665">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:00:25 UTC</createdTime>
+<ownerDesignName>modelo2</ownerDesignName>
+<importedID>126C1E11-F933-2AAE-9AD7-6275E2DFEE5B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D3DB5C61-221A-9401-77C4-DA4D45A01A26" referredColumn="3E61CF5E-4BA4-0A30-4F59-320B408F5A16"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C3797E00-F703-3EB9-0E28-BE024F76E684" name="Respuestas_Estudiantes_PK">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:00:25 UTC</createdTime>
+<ownerDesignName>modelo2</ownerDesignName>
+<importedID>7B5F3DA3-3AB1-2CC9-8FEC-F33A6A5DAC57</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84E37F22-F8D7-896A-5281-6F57FCF649A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="251E2A5D-7F33-6595-BC8D-6E3E868C0D54" name="Resp_Estud_Resp_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:00:25 UTC</createdTime>
+<ownerDesignName>modelo2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C614FC6-A5F5-1922-2012-04C8832D3665"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4E6C288B-3D3B-7B3C-9858-EAD6AA0C3755" name="Resp_Estud_Exam_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:00:25 UTC</createdTime>
+<ownerDesignName>modelo2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A9D1794-C071-0325-1989-CD4CF9C1C9A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C7EC3189-5E3B-FE48-7E04-7DB230CDCEF0" name="Resp_Estud_Estud_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:00:25 UTC</createdTime>
+<ownerDesignName>modelo2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5BCBC61-5CB2-B802-80AA-58596DEC9077"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="466E0B66-CB5A-FBE5-CF06-372C7D08BB43" name="Resp_Estud_Preg_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:00:25 UTC</createdTime>
+<ownerDesignName>modelo2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56775FBF-E0E6-AFE7-3958-89F61560AF84"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
