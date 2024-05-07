@@ -3,7 +3,6 @@
 <createdBy>ospin</createdBy>
 <createdTime>2024-03-08 17:03:30 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
-<ordsAlias>table_7</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
@@ -29,7 +28,7 @@
 <ownDataTypeParameters>80 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fechayhoracreacion" id="56BBE80F-9B11-6076-B3E4-E27BC8F0B056">
+<Column name="fecha" id="56BBE80F-9B11-6076-B3E4-E27BC8F0B056">
 <createdBy>ospin</createdBy>
 <createdTime>2024-03-08 17:07:30 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>

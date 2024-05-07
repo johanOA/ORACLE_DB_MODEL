@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9C6991E2-E1FF-A30D-F51D-0C5B50EEE4B9" containerWithKeyObject="57069948-9A11-B585-EFDA-CB72BB01AD71" localFKIndex="706E4763-FD6F-45EA-ED31-F6FA1FFD9194" name="Preguntas_Temas_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>2A032E07-4374-3FEB-8856-ACCEDC8BE706</importedID>
+<referredTableLongName>Temas</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6A158C08-76E1-5794-4512-46404D60B359</referredTableID>
+<keyObject>B7A7D6AC-F69A-AF42-ECD3-1ED6E7C22C12</keyObject>
+<referredKeyID>B7A7D6AC-F69A-AF42-ECD3-1ED6E7C22C12</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idTema</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

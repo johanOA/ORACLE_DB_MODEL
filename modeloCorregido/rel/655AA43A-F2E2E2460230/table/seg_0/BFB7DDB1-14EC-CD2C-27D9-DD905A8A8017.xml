@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BFB7DDB1-14EC-CD2C-27D9-DD905A8A8017" name="Estudiantes">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>72EEABDC-8C1A-FEAF-D0F7-C382E2C6CEB5</importedID>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idEstudiante" id="14627D51-4199-93C7-8106-4095149B4DCB">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>46B6D9C3-742B-1C71-B1BF-60742EC26765</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="D652E66C-D07C-27C5-DDE0-3631AD32AFDB">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>B168E8D8-4F97-9351-9507-6213C99DA062</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellido" id="DD4857D1-1A88-469D-981C-943CDBA268B9">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>4F5AE6C6-5048-81BD-2295-ABACBDCDFA0A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario" id="36A61CB0-8DEF-2A70-4544-CBD881949572">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>7614EF1D-C09B-F410-CD05-629688F77EB0</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="826EB705-BF95-DB58-03E0-4D2BD59E5BC7">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>E69EE6DE-66D8-1963-1B9F-511B3CEC26C1</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="password" id="9F5CFF8C-A74E-84CC-1222-04150172314F">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>775E4B87-C562-8B0E-C848-809DCFD3489F</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="C93AE4C8-1A9B-261F-6C7C-CBB1619F7CA3">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>27C1CF41-1D15-8B5D-5676-DA7BD24A2CBF</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CA044147-1076-3D08-872B-9B6FDB59BCE4" name="Estudiantes_PK">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>8F4A59A4-808B-1BF3-AF5E-AA10F20F6C70</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14627D51-4199-93C7-8106-4095149B4DCB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

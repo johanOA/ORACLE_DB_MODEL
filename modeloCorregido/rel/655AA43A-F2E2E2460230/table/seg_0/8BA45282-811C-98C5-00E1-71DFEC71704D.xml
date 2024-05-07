@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8BA45282-811C-98C5-00E1-71DFEC71704D" name="Instituciones">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>1883B31E-26C7-D1E0-6E6D-29EC1E9863F4</importedID>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idInstitucion" id="4D0CEDD6-F124-2D45-14E0-100AEAC80DBF">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>06AACDA2-83F8-B06D-FE70-C4D5AC486E0A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombreninstitucion" id="D98EB918-D993-70EA-BEDF-ECE9EE094C4A">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>085357B1-7533-5DFD-132B-17C081E8E78A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="412E2972-5289-4177-26F5-0814144E72DE">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>766F106D-737F-5764-F6CA-405DBEC4AAFD</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccion" id="7B385513-EF1E-B66A-00DC-1FD2A55DEBB8">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>DFAF5A9A-E7E4-62B3-B40D-1402A9E2846A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="17F425B4-F00F-FD2E-F0D5-0AB26449033A">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>F7ED927D-0FBF-669A-A0AC-E49A20A7718C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="21F1508C-C8AC-2918-77E3-FF02AF420533" name="Instituciones_PK">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>90074064-0AE4-49A8-5309-4F7645947283</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D0CEDD6-F124-2D45-14E0-100AEAC80DBF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

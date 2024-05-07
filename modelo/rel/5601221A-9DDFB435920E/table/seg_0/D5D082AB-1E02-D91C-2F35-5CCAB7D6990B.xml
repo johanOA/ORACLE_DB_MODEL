@@ -38,20 +38,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="idAsignaionDia" id="16A52337-ADE3-5B4C-351D-817F733B37A3">
-<createdBy>ospin</createdBy>
-<createdTime>2024-03-27 15:27:48 UTC</createdTime>
-<ownerDesignName>modelo</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="1E1393CA-5E0A-EE5F-79A1-ED897BC1B994" referredColumn="D59716D3-EDF6-8367-3532-1367FA4629A8"/>
-</associations>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="3B715FA3-2818-1CA8-CE75-649430B4217C" name="Horarios_PK">
@@ -63,16 +49,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="16D15733-69F1-B54D-82B7-C31632A08666"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="7EE13C21-D151-42B3-8C51-4FB581803643" name="Horarios_Asignacion_Dias_FK">
-<createdBy>ospin</createdBy>
-<createdTime>2024-03-27 15:27:48 UTC</createdTime>
-<ownerDesignName>modelo</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="16A52337-ADE3-5B4C-351D-817F733B37A3"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

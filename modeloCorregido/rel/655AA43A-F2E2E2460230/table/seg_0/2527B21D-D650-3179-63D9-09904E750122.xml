@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2527B21D-D650-3179-63D9-09904E750122" name="Estudiante_Curso">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 16:44:02 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<ordsAlias>table_22</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="CE2EB618-F228-95B0-8B34-4C09817AB314">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 16:44:33 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="idCurso" id="2FC6BF85-4CC8-C840-1F13-289FB41D89ED">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 16:45:08 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7339BDAD-6C35-C782-4045-65966E7B41E1" referredColumn="DA99441C-DA2A-7865-896C-2D7B7E080D14"/>
+</associations>
+</Column>
+<Column name="idEstudiante" id="453EA5DD-8E23-F072-4F71-289F7B67EF10">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 16:45:18 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AAD91D71-E304-0893-EA38-3396161756D3" referredColumn="14627D51-4199-93C7-8106-4095149B4DCB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3D9D50A9-7342-D145-89E7-C7A0568C2526" name="Estudiante_Curso_PK">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 16:44:33 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE2EB618-F228-95B0-8B34-4C09817AB314"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="52B63414-8B48-840A-786C-E32484875382" name="Estud_Cur_Cur_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 16:45:08 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2FC6BF85-4CC8-C840-1F13-289FB41D89ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="772E1A3F-0EF1-7FEC-6D90-461B3D725DDE" name="Estud_Cur_Estud_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 16:45:18 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="453EA5DD-8E23-F072-4F71-289F7B67EF10"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

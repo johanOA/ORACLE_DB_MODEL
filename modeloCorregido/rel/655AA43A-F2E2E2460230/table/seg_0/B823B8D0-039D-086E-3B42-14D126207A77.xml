@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B823B8D0-039D-086E-3B42-14D126207A77" name="Asignaciones_Estudiantes">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>4A780762-34B6-59FE-0D05-A0FCE3CF0EF5</importedID>
+<ordsAlias>table_16</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idAsignacion" id="9BDBD709-D6A0-4204-838D-5A72D7224016">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>540697CB-6091-0E4A-A3E4-A9F35820D4DA</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="idEstudiante" id="E1AF2CBE-FADC-EE4C-8A75-D027256307E1">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>9FBE7BB3-6C30-60DD-22AE-10F1DB3568EF</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A8F0461B-6558-93EB-5F17-F15E00C32462" referredColumn="14627D51-4199-93C7-8106-4095149B4DCB"/>
+</associations>
+</Column>
+<Column name="idExamenes" id="EC37DCFA-BD53-0DCB-41F2-FD7D1EC2B7FF">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>0C42EC39-FD8E-3EFE-D387-E9CCC87A43A9</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A64079A1-29FE-0982-4F2A-05039B0F32AD" referredColumn="B3A11E90-EE4F-F9FD-180D-864856B08981"/>
+</associations>
+</Column>
+<Column name="nota" id="16BFDD57-EE4B-089C-2E95-4C7DB6F212D8">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>B0D13E5E-5039-2E3A-7723-586D5EB22513</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hora_inicio" id="EB88E13C-6C5B-F4EA-6F2C-CF72FD2352FA">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 16:51:37 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hora_final" id="42EA00E2-1A86-9B2F-5F66-CC7317699E32">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 16:51:37 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FF016F74-27BF-0C23-220F-D57544DA2277" name="Asignaciones_Estudiantes_PK">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>FE40F102-2B64-E57C-AD75-0BBDB0430C24</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9BDBD709-D6A0-4204-838D-5A72D7224016"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5B013A97-480D-8B39-F945-1EEB4E91496B" name="Asig_Estud_Estud_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E1AF2CBE-FADC-EE4C-8A75-D027256307E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9FD07FAA-8CA2-1D30-8406-765EFC10F810" name="Asig_Estud_Exam_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC37DCFA-BD53-0DCB-41F2-FD7D1EC2B7FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="304345DB-D5C8-7002-FE67-45A16B95A880" containerWithKeyObject="03F3E011-DEB0-468C-004F-6A39CD42D910" localFKIndex="5C902F2A-5AA6-FD2B-B07A-D6E015AB2D6E" name="Examenes_Cursos_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>91EAD3A2-AD4C-CF6B-8BD4-BFDD73317A94</importedID>
+<referredTableLongName>Cursos</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7A7E3780-A2A2-99C1-540D-5907BC74E573</referredTableID>
+<keyObject>7162DDE7-E970-ADCF-23C8-8D00E552758C</keyObject>
+<referredKeyID>7162DDE7-E970-ADCF-23C8-8D00E552758C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idCurso</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

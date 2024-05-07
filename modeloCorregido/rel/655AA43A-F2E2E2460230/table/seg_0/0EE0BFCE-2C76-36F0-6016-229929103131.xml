@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0EE0BFCE-2C76-36F0-6016-229929103131" name="Respuestas_Estudiantes">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>F95604E4-6BA2-FF82-EF50-326A963AE559</importedID>
+<ordsAlias>table_27</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idRespuestaEstudiante" id="ACFA0ABD-F6A5-3073-C649-C663E6BDCFB2">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>84E37F22-F8D7-896A-5281-6F57FCF649A4</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="idRespuesta" id="526CE515-58F4-62F0-4BE4-ADC97B91C917">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>7C614FC6-A5F5-1922-2012-04C8832D3665</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="720507BE-82E8-44A7-046B-29B1645965F5" referredColumn="38B1C3A3-A62D-18D7-2878-A457FD897134"/>
+</associations>
+</Column>
+<Column name="idAsignacionPregunta" id="CDF751D9-28A3-0B2C-F74E-C0012FDF937A">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 16:48:29 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="23E42410-F0A4-7C67-F397-FD8A51FF3416" referredColumn="2267F75C-7225-FBC6-DAD4-19728A87CADF"/>
+</associations>
+</Column>
+<Column name="respuesta" id="13DCB011-5B60-24C2-ACE2-BCF2DE7897E6">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 17:17:27 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="01C4305E-00DA-7652-08C7-8CE942934366" name="Respuestas_Estudiantes_PK">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>C3797E00-F703-3EB9-0E28-BE024F76E684</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ACFA0ABD-F6A5-3073-C649-C663E6BDCFB2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6981C3EF-F8EC-B0A4-6ADC-9A4897B1D42A" name="Resp_Estud_Resp_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="526CE515-58F4-62F0-4BE4-ADC97B91C917"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="95CA62E2-246E-340F-AC15-C110709D2D17" name="Resp_Estud_Asig_Preg_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 16:48:29 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CDF751D9-28A3-0B2C-F74E-C0012FDF937A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

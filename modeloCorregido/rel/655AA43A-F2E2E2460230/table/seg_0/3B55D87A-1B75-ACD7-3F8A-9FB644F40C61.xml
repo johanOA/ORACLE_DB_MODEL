@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3B55D87A-1B75-ACD7-3F8A-9FB644F40C61" name="BancoPreguntas">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>D15ED5D8-67C7-A640-C438-39F1E84B7D37</importedID>
+<ordsAlias>table_26</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idBanco" id="B3D20B6A-D72E-7415-BF2A-3B0E677546BD">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>ED373985-A8C9-A777-A931-53F877751D19</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Preguntas_idPregunta" id="480741A4-31DB-1CE9-B138-34F64C4E2050">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>DA894520-C64C-D5AB-E7A2-20E61AF43AFF</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4E9F5345-98CF-0A29-84DD-C234DEC1BB43" referredColumn="66CF36D9-DAB5-D3C7-3425-64F907E67ED4"/>
+</associations>
+</Column>
+<Column name="Examenes_idExamenen" id="BF0B4E7D-3BFE-EDB9-9E69-5E88514DC20D">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>7D97E39F-4176-FA44-9180-F0484B0BA6A3</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2FA8DD50-20A3-790D-9FD2-016145A03E23" referredColumn="B3A11E90-EE4F-F9FD-180D-864856B08981"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="135DF59E-4DFF-E3E5-069B-5E4A204A10D7" name="BancoPreguntas_PK">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>F6F9F921-BFBE-CD97-E817-FA3F559229BC</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3D20B6A-D72E-7415-BF2A-3B0E677546BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="989350CB-E709-0AB9-27AA-444BBA1017C4" name="BancoPreguntas_Preguntas_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="480741A4-31DB-1CE9-B138-34F64C4E2050"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="237AF987-5295-51F9-D32D-83E2AC629810" name="BancoPreguntas_Examenes_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF0B4E7D-3BFE-EDB9-9E69-5E88514DC20D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

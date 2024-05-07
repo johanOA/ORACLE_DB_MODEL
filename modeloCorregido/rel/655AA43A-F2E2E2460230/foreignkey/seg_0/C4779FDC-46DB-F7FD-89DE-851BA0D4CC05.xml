@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C4779FDC-46DB-F7FD-89DE-851BA0D4CC05" containerWithKeyObject="E3A38AB1-FC0E-8E8A-8CBD-309927CA23AE" localFKIndex="440F74D1-09DD-9C64-8D9F-57B8D5DDAD1B" name="UnidadesEstudio_Materias_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>1F619781-49D5-F5D0-537B-5CBDF6CE21B8</importedID>
+<referredTableLongName>Materias</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>281C33AB-D2DD-A8A4-B7EC-22FF4623EF79</referredTableID>
+<keyObject>7C233BB4-3934-4F5C-78F8-C27431A036C2</keyObject>
+<referredKeyID>7C233BB4-3934-4F5C-78F8-C27431A036C2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idMateria</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

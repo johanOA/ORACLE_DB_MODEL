@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4E9F5345-98CF-0A29-84DD-C234DEC1BB43" containerWithKeyObject="3B55D87A-1B75-ACD7-3F8A-9FB644F40C61" localFKIndex="989350CB-E709-0AB9-27AA-444BBA1017C4" name="BancoPreguntas_Preguntas_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<importedID>1C26C0C0-2D56-232F-D644-4C405244D7F6</importedID>
+<referredTableLongName>Preguntas</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>57069948-9A11-B585-EFDA-CB72BB01AD71</referredTableID>
+<keyObject>8A30806A-4D33-9D90-F932-830860B9B469</keyObject>
+<referredKeyID>8A30806A-4D33-9D90-F932-830860B9B469</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idPregunta</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
