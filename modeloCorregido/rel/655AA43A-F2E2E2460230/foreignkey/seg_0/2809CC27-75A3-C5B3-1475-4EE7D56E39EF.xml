@@ -1,9 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="03364A25-6300-776E-0638-B70B87E34C16" containerWithKeyObject="BBB4FE7B-49BA-999E-67A2-F6BB876F7B27" localFKIndex="12D56A91-57D8-7573-FABF-433A959E0762" name="temas_examenes_Temas_FK">
-<createdBy>ASUS</createdBy>
-<createdTime>2024-05-07 13:38:00 UTC</createdTime>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2809CC27-75A3-C5B3-1475-4EE7D56E39EF" containerWithKeyObject="03F3E011-DEB0-468C-004F-6A39CD42D910" localFKIndex="866A10AA-405D-98DC-B2E6-8D4012A1985B" name="Examenes_Temas_FK">
+<createdBy>user</createdBy>
+<createdTime>2024-05-08 02:34:42 UTC</createdTime>
 <ownerDesignName>modeloCorregido</ownerDesignName>
-<importedID>9A8BE696-FF4C-B450-76AA-0F0D23AD19C8</importedID>
 <referredTableLongName>Temas</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>6A158C08-76E1-5794-4512-46404D60B359</referredTableID>

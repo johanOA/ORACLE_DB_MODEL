@@ -79,6 +79,16 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="fecha" id="3B3312A5-264B-BF74-83E7-669C04256A27">
+<createdBy>user</createdBy>
+<createdTime>2024-05-08 01:52:41 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="FF016F74-27BF-0C23-220F-D57544DA2277" name="Asignaciones_Estudiantes_PK">

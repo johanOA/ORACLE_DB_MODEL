@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 21.2.0.165.1515
---   en:        2024-04-01 21:42:46 COT
+--   en:        2024-05-07 20:28:10 COT
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -9,34 +9,24 @@
 
 -- predefined type, no DDL - XMLTYPE
 
-CREATE TABLE asignacion_dias (
-    idasignaiondia INTEGER NOT NULL,
-    iddia          INTEGER NOT NULL,
-    idcurso        INTEGER NOT NULL,
-    idlugar        INTEGER NOT NULL
-);
-
-ALTER TABLE asignacion_dias ADD CONSTRAINT asignacion_dias_pk PRIMARY KEY ( idasignaiondia );
-
 CREATE TABLE asignaciones_estudiantes (
-    idasignacion     INTEGER NOT NULL,
-    idestudiante     INTEGER NOT NULL,
-    idexamenes       INTEGER NOT NULL,
-    hora_inicio      DATE NOT NULL,
-    hora_fin         DATE NOT NULL,
-    fecha_asignacion DATE NOT NULL,
-    nota             FLOAT NOT NULL
+    idasignacion INTEGER NOT NULL,
+    idestudiante INTEGER NOT NULL,
+    idexamenes   INTEGER NOT NULL,
+    nota         FLOAT NOT NULL,
+    hora_inicio  DATE NOT NULL,
+    hora_final   DATE NOT NULL
 );
 
 ALTER TABLE asignaciones_estudiantes ADD CONSTRAINT asignaciones_estudiantes_pk PRIMARY KEY ( idasignacion );
 
 CREATE TABLE asignaciones_preguntas (
-    idasignacion INTEGER NOT NULL,
-    idestudiante INTEGER NOT NULL,
-    idpreguntas  INTEGER NOT NULL
+    idasignacionpregunta   INTEGER NOT NULL,
+    idasignacionestudiante INTEGER NOT NULL,
+    idbanco                INTEGER NOT NULL
 );
 
-ALTER TABLE asignaciones_preguntas ADD CONSTRAINT asignaciones_preguntas_pk PRIMARY KEY ( idasignacion );
+ALTER TABLE asignaciones_preguntas ADD CONSTRAINT asignaciones_preguntas_pk PRIMARY KEY ( idasignacionpregunta );
 
 CREATE TABLE bancopreguntas (
     idbanco              INTEGER NOT NULL,
@@ -85,19 +75,20 @@ CREATE TABLE docentes (
 
 ALTER TABLE docentes ADD CONSTRAINT docentes_pk PRIMARY KEY ( iddocente );
 
-CREATE TABLE edificios (
-    idedificio  INTEGER NOT NULL,
-    descripcion VARCHAR2(40 BYTE) NOT NULL
-);
-
-ALTER TABLE edificios ADD CONSTRAINT edificios_pk PRIMARY KEY ( idedificio );
-
 CREATE TABLE estados (
     idestado    INTEGER NOT NULL,
     descripcion VARCHAR2(40 BYTE)
 );
 
 ALTER TABLE estados ADD CONSTRAINT estados_pk PRIMARY KEY ( idestado );
+
+CREATE TABLE estudiante_curso (
+    id           INTEGER NOT NULL,
+    idcurso      INTEGER NOT NULL,
+    idestudiante INTEGER NOT NULL
+);
+
+ALTER TABLE estudiante_curso ADD CONSTRAINT estudiante_curso_pk PRIMARY KEY ( id );
 
 CREATE TABLE estudiantes (
     idestudiante INTEGER NOT NULL,
@@ -106,40 +97,30 @@ CREATE TABLE estudiantes (
     usuario      VARCHAR2(40 BYTE) NOT NULL,
     email        VARCHAR2(40 BYTE) NOT NULL,
     password     VARCHAR2(40 BYTE) NOT NULL,
-    telefono     INTEGER,
-    idcurso      INTEGER NOT NULL,
-    idgrupo      INTEGER NOT NULL
+    telefono     INTEGER
 );
 
 ALTER TABLE estudiantes ADD CONSTRAINT estudiantes_pk PRIMARY KEY ( idestudiante );
 
 CREATE TABLE examenes (
-    idexamenen         INTEGER NOT NULL,
-    titulo             VARCHAR2(80 BYTE) NOT NULL,
-    fechayhoracreacion DATE NOT NULL,
-    duracionexamen     INTEGER NOT NULL,
-    cantidadpreguntas  INTEGER,
-    calificacion       FLOAT NOT NULL,
-    idhorario          INTEGER NOT NULL,
-    idcurso            INTEGER NOT NULL
+    idexamenen                   INTEGER NOT NULL,
+    titulo                       VARCHAR2(80 BYTE) NOT NULL,
+    fecha                        DATE NOT NULL,
+    duracionexamen               INTEGER NOT NULL,
+    cantidadpreguntas            INTEGER NOT NULL,
+    calificacion                 FLOAT NOT NULL,
+    idhorario                    INTEGER NOT NULL,
+    idcurso                      INTEGER NOT NULL,
+    cantidadpreguntasxestudiante INTEGER NOT NULL
 );
 
 ALTER TABLE examenes ADD CONSTRAINT examenes_pk PRIMARY KEY ( idexamenen );
 
-CREATE TABLE grupos (
-    idgrupo         INTEGER NOT NULL,
-    nombregrupo     VARCHAR2(40 BYTE) NOT NULL,
-    añoacatemico    DATE NOT NULL,
-    iddocente_tutor INTEGER NOT NULL
-);
-
-ALTER TABLE grupos ADD CONSTRAINT grupos_pk PRIMARY KEY ( idgrupo );
-
 CREATE TABLE horarios (
-    idhorario      INTEGER NOT NULL,
-    hora_inicio    DATE NOT NULL,
-    hora_fin       DATE NOT NULL,
-    idasignaiondia INTEGER NOT NULL
+    idhorario   INTEGER NOT NULL,
+    hora_inicio DATE NOT NULL,
+    hora_fin    DATE NOT NULL,
+    iddia       INTEGER NOT NULL
 );
 
 ALTER TABLE horarios ADD CONSTRAINT horarios_pk PRIMARY KEY ( idhorario );
@@ -153,14 +134,6 @@ CREATE TABLE instituciones (
 );
 
 ALTER TABLE instituciones ADD CONSTRAINT instituciones_pk PRIMARY KEY ( idinstitucion );
-
-CREATE TABLE lugares (
-    idlugar    INTEGER NOT NULL,
-    idedificio INTEGER NOT NULL,
-    idsalon    INTEGER NOT NULL
-);
-
-ALTER TABLE lugares ADD CONSTRAINT lugares_pk PRIMARY KEY ( idlugar );
 
 CREATE TABLE materias (
     idmateria   INTEGER NOT NULL,
@@ -191,20 +164,12 @@ ALTER TABLE respuestas ADD CONSTRAINT respuestas_pk PRIMARY KEY ( idrespuesta );
 
 CREATE TABLE respuestas_estudiantes (
     idrespuestaestudiante INTEGER NOT NULL,
-    idestudiante          INTEGER NOT NULL,
-    idexamenes            INTEGER NOT NULL,
-    idpreguntas           INTEGER NOT NULL,
-    idrespuesta           INTEGER NOT NULL
+    idrespuesta           INTEGER NOT NULL,
+    idasignacionpregunta  INTEGER NOT NULL,
+    respuesta             VARCHAR2(100) NOT NULL
 );
 
 ALTER TABLE respuestas_estudiantes ADD CONSTRAINT respuestas_estudiantes_pk PRIMARY KEY ( idrespuestaestudiante );
-
-CREATE TABLE salones (
-    idsalon     INTEGER NOT NULL,
-    descripcion VARCHAR2(40 BYTE)
-);
-
-ALTER TABLE salones ADD CONSTRAINT salones_pk PRIMARY KEY ( idsalon );
 
 CREATE TABLE temas (
     idtema      INTEGER NOT NULL,
@@ -248,24 +213,12 @@ ALTER TABLE asignaciones_estudiantes
         REFERENCES examenes ( idexamenen );
 
 ALTER TABLE asignaciones_preguntas
-    ADD CONSTRAINT asig_preg_estud_fk FOREIGN KEY ( idestudiante )
-        REFERENCES estudiantes ( idestudiante );
+    ADD CONSTRAINT asig_preg_asig_estud_fk FOREIGN KEY ( idasignacionestudiante )
+        REFERENCES asignaciones_estudiantes ( idasignacion );
 
 ALTER TABLE asignaciones_preguntas
-    ADD CONSTRAINT asig_preg_preg_fk FOREIGN KEY ( idpreguntas )
-        REFERENCES preguntas ( idpregunta );
-
-ALTER TABLE asignacion_dias
-    ADD CONSTRAINT asignacion_dias_cursos_fk FOREIGN KEY ( idcurso )
-        REFERENCES cursos ( idcurso );
-
-ALTER TABLE asignacion_dias
-    ADD CONSTRAINT asignacion_dias_dias_fk FOREIGN KEY ( iddia )
-        REFERENCES dias ( iddia );
-
-ALTER TABLE asignacion_dias
-    ADD CONSTRAINT asignacion_dias_lugares_fk FOREIGN KEY ( idlugar )
-        REFERENCES lugares ( idlugar );
+    ADD CONSTRAINT asig_preg_bancopreg_fk FOREIGN KEY ( idbanco )
+        REFERENCES bancopreguntas ( idbanco );
 
 ALTER TABLE bancopreguntas
     ADD CONSTRAINT bancopreguntas_examenes_fk FOREIGN KEY ( examenes_idexamenen )
@@ -291,13 +244,13 @@ ALTER TABLE docentes
     ADD CONSTRAINT docentes_instituciones_fk FOREIGN KEY ( idinstitucion )
         REFERENCES instituciones ( idinstitucion );
 
-ALTER TABLE estudiantes
-    ADD CONSTRAINT estudiantes_cursos_fk FOREIGN KEY ( idcurso )
+ALTER TABLE estudiante_curso
+    ADD CONSTRAINT estud_cur_cur_fk FOREIGN KEY ( idcurso )
         REFERENCES cursos ( idcurso );
 
-ALTER TABLE estudiantes
-    ADD CONSTRAINT estudiantes_grupos_fk FOREIGN KEY ( idgrupo )
-        REFERENCES grupos ( idgrupo );
+ALTER TABLE estudiante_curso
+    ADD CONSTRAINT estud_cur_estud_fk FOREIGN KEY ( idestudiante )
+        REFERENCES estudiantes ( idestudiante );
 
 ALTER TABLE examenes
     ADD CONSTRAINT examenes_cursos_fk FOREIGN KEY ( idcurso )
@@ -307,21 +260,9 @@ ALTER TABLE examenes
     ADD CONSTRAINT examenes_horarios_fk FOREIGN KEY ( idhorario )
         REFERENCES horarios ( idhorario );
 
-ALTER TABLE grupos
-    ADD CONSTRAINT grupos_docentes_fk FOREIGN KEY ( iddocente_tutor )
-        REFERENCES docentes ( iddocente );
-
 ALTER TABLE horarios
-    ADD CONSTRAINT horarios_asignacion_dias_fk FOREIGN KEY ( idasignaiondia )
-        REFERENCES asignacion_dias ( idasignaiondia );
-
-ALTER TABLE lugares
-    ADD CONSTRAINT lugares_edificios_fk FOREIGN KEY ( idedificio )
-        REFERENCES edificios ( idedificio );
-
-ALTER TABLE lugares
-    ADD CONSTRAINT lugares_salones_fk FOREIGN KEY ( idsalon )
-        REFERENCES salones ( idsalon );
+    ADD CONSTRAINT horarios_dias_fk FOREIGN KEY ( iddia )
+        REFERENCES dias ( iddia );
 
 ALTER TABLE preguntas
     ADD CONSTRAINT preguntas_estados_fk FOREIGN KEY ( idestado )
@@ -336,16 +277,8 @@ ALTER TABLE preguntas
         REFERENCES tipospreguntas ( idtipopregunta );
 
 ALTER TABLE respuestas_estudiantes
-    ADD CONSTRAINT resp_estud_estud_fk FOREIGN KEY ( idestudiante )
-        REFERENCES estudiantes ( idestudiante );
-
-ALTER TABLE respuestas_estudiantes
-    ADD CONSTRAINT resp_estud_exam_fk FOREIGN KEY ( idexamenes )
-        REFERENCES examenes ( idexamenen );
-
-ALTER TABLE respuestas_estudiantes
-    ADD CONSTRAINT resp_estud_preg_fk FOREIGN KEY ( idpreguntas )
-        REFERENCES preguntas ( idpregunta );
+    ADD CONSTRAINT resp_estud_asig_preg_fk FOREIGN KEY ( idasignacionpregunta )
+        REFERENCES asignaciones_preguntas ( idasignacionpregunta );
 
 ALTER TABLE respuestas_estudiantes
     ADD CONSTRAINT resp_estud_resp_fk FOREIGN KEY ( idrespuesta )
@@ -375,9 +308,9 @@ ALTER TABLE unidadesestudio
 
 -- Informe de Resumen de Oracle SQL Developer Data Modeler: 
 -- 
--- CREATE TABLE                            25
+-- CREATE TABLE                            21
 -- CREATE INDEX                             0
--- ALTER TABLE                             58
+-- ALTER TABLE                             46
 -- CREATE VIEW                              0
 -- ALTER VIEW                               0
 -- CREATE PACKAGE                           0

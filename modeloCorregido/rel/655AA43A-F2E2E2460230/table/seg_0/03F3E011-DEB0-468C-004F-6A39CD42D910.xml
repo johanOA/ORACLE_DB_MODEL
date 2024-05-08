@@ -103,6 +103,30 @@
 <colAssociation fkAssociation="304345DB-D5C8-7002-FE67-45A16B95A880" referredColumn="DA99441C-DA2A-7865-896C-2D7B7E080D14"/>
 </associations>
 </Column>
+<Column name="cantidadPreguntasXEstudiante" id="7A3991EC-92C8-C6ED-D1FB-51691D6F8C35">
+<createdBy>user</createdBy>
+<createdTime>2024-05-08 01:28:02 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="idTema" id="CF931B3D-01E4-4C4B-0B18-D2F3A6D8018A">
+<createdBy>user</createdBy>
+<createdTime>2024-05-08 02:34:42 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2809CC27-75A3-C5B3-1475-4EE7D56E39EF" referredColumn="8CFA3453-6030-C324-DBA9-C2DEB9C81F08"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="3DEE3B87-BD11-E5D5-2C48-D218A9F25117" name="Examenes_PK">
@@ -135,6 +159,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="075BB1CF-58D3-CB89-38D0-AD5B833E226E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="866A10AA-405D-98DC-B2E6-8D4012A1985B" name="Examenes_Temas_FK">
+<createdBy>user</createdBy>
+<createdTime>2024-05-08 02:34:42 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF931B3D-01E4-4C4B-0B18-D2F3A6D8018A"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
