@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 21.2.0.165.1515
---   en:        2024-05-07 20:28:10 COT
+--   en:        2024-05-09 19:57:28 COT
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -15,7 +15,8 @@ CREATE TABLE asignaciones_estudiantes (
     idexamenes   INTEGER NOT NULL,
     nota         FLOAT NOT NULL,
     hora_inicio  DATE NOT NULL,
-    hora_final   DATE NOT NULL
+    hora_final   DATE NOT NULL,
+    fecha        DATE NOT NULL
 );
 
 ALTER TABLE asignaciones_estudiantes ADD CONSTRAINT asignaciones_estudiantes_pk PRIMARY KEY ( idasignacion );
@@ -53,13 +54,6 @@ CREATE TABLE cursos (
 );
 
 ALTER TABLE cursos ADD CONSTRAINT cursos_pk PRIMARY KEY ( idcurso );
-
-CREATE TABLE dias (
-    iddia       INTEGER NOT NULL,
-    descripcion VARCHAR2(40 BYTE) NOT NULL
-);
-
-ALTER TABLE dias ADD CONSTRAINT dias_pk PRIMARY KEY ( iddia );
 
 CREATE TABLE docentes (
     iddocente          INTEGER NOT NULL,
@@ -109,21 +103,14 @@ CREATE TABLE examenes (
     duracionexamen               INTEGER NOT NULL,
     cantidadpreguntas            INTEGER NOT NULL,
     calificacion                 FLOAT NOT NULL,
-    idhorario                    INTEGER NOT NULL,
     idcurso                      INTEGER NOT NULL,
-    cantidadpreguntasxestudiante INTEGER NOT NULL
+    cantidadpreguntasxestudiante INTEGER NOT NULL,
+    idtema                       INTEGER NOT NULL,
+    horainicio                   DATE,
+    horafin                      DATE
 );
 
 ALTER TABLE examenes ADD CONSTRAINT examenes_pk PRIMARY KEY ( idexamenen );
-
-CREATE TABLE horarios (
-    idhorario   INTEGER NOT NULL,
-    hora_inicio DATE NOT NULL,
-    hora_fin    DATE NOT NULL,
-    iddia       INTEGER NOT NULL
-);
-
-ALTER TABLE horarios ADD CONSTRAINT horarios_pk PRIMARY KEY ( idhorario );
 
 CREATE TABLE instituciones (
     idinstitucion      INTEGER NOT NULL,
@@ -179,14 +166,6 @@ CREATE TABLE temas (
 );
 
 ALTER TABLE temas ADD CONSTRAINT temas_pk PRIMARY KEY ( idtema );
-
-CREATE TABLE temas_examenes (
-    idtema_examen INTEGER NOT NULL,
-    idexamenes    INTEGER NOT NULL,
-    idtema        INTEGER NOT NULL
-);
-
-ALTER TABLE temas_examenes ADD CONSTRAINT temas_examenes_pk PRIMARY KEY ( idtema_examen );
 
 CREATE TABLE tipospreguntas (
     idtipopregunta INTEGER NOT NULL,
@@ -257,12 +236,8 @@ ALTER TABLE examenes
         REFERENCES cursos ( idcurso );
 
 ALTER TABLE examenes
-    ADD CONSTRAINT examenes_horarios_fk FOREIGN KEY ( idhorario )
-        REFERENCES horarios ( idhorario );
-
-ALTER TABLE horarios
-    ADD CONSTRAINT horarios_dias_fk FOREIGN KEY ( iddia )
-        REFERENCES dias ( iddia );
+    ADD CONSTRAINT examenes_temas_fk FOREIGN KEY ( idtema )
+        REFERENCES temas ( idtema );
 
 ALTER TABLE preguntas
     ADD CONSTRAINT preguntas_estados_fk FOREIGN KEY ( idestado )
@@ -292,14 +267,6 @@ ALTER TABLE temas
     ADD CONSTRAINT temas_contenidos_fk FOREIGN KEY ( idcontenido )
         REFERENCES contenidos ( idcontenido );
 
-ALTER TABLE temas_examenes
-    ADD CONSTRAINT temas_examenes_examenes_fk FOREIGN KEY ( idexamenes )
-        REFERENCES examenes ( idexamenen );
-
-ALTER TABLE temas_examenes
-    ADD CONSTRAINT temas_examenes_temas_fk FOREIGN KEY ( idtema )
-        REFERENCES temas ( idtema );
-
 ALTER TABLE unidadesestudio
     ADD CONSTRAINT unidadesestudio_materias_fk FOREIGN KEY ( idmateria )
         REFERENCES materias ( idmateria );
@@ -308,9 +275,9 @@ ALTER TABLE unidadesestudio
 
 -- Informe de Resumen de Oracle SQL Developer Data Modeler: 
 -- 
--- CREATE TABLE                            21
+-- CREATE TABLE                            18
 -- CREATE INDEX                             0
--- ALTER TABLE                             46
+-- ALTER TABLE                             40
 -- CREATE VIEW                              0
 -- ALTER VIEW                               0
 -- CREATE PACKAGE                           0

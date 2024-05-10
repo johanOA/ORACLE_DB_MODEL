@@ -75,20 +75,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="idHorario" id="2A2311B9-A735-F708-53FB-CFDA6F23E0A6">
-<createdBy>ASUS</createdBy>
-<createdTime>2024-05-07 13:38:00 UTC</createdTime>
-<ownerDesignName>modeloCorregido</ownerDesignName>
-<importedID>7B9574AA-7B7A-843C-DBBF-6185F56581BE</importedID>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="8B50FF09-3868-6599-B5D4-EF581C21222B" referredColumn="1682CDB2-6CC1-9DF3-D8B1-E41AB7FEE774"/>
-</associations>
-</Column>
 <Column name="idCurso" id="075BB1CF-58D3-CB89-38D0-AD5B833E226E">
 <createdBy>ASUS</createdBy>
 <createdTime>2024-05-07 13:38:00 UTC</createdTime>
@@ -127,6 +113,28 @@
 <colAssociation fkAssociation="2809CC27-75A3-C5B3-1475-4EE7D56E39EF" referredColumn="8CFA3453-6030-C324-DBA9-C2DEB9C81F08"/>
 </associations>
 </Column>
+<Column name="horaInicio" id="7CEE1AC4-F62E-D40A-81AC-40C9E2E8D2AB">
+<createdBy>user</createdBy>
+<createdTime>2024-05-10 00:55:00 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="horaFin" id="52A5F10D-14A6-F7F7-C865-C26230F4C020">
+<createdBy>user</createdBy>
+<createdTime>2024-05-10 00:55:13 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="3DEE3B87-BD11-E5D5-2C48-D218A9F25117" name="Examenes_PK">
@@ -139,16 +147,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="B3A11E90-EE4F-F9FD-180D-864856B08981"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="6CF3DF5F-BADB-BCCB-1CF8-D516774AEC53" name="Examenes_Horarios_FK">
-<createdBy>ASUS</createdBy>
-<createdTime>2024-05-07 13:38:00 UTC</createdTime>
-<ownerDesignName>modeloCorregido</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="2A2311B9-A735-F708-53FB-CFDA6F23E0A6"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="5C902F2A-5AA6-FD2B-B07A-D6E015AB2D6E" name="Examenes_Cursos_FK">
