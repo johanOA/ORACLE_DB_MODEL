@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 21.2.0.165.1515
---   en:        2024-05-09 19:57:28 COT
+--   en:        2024-05-11 12:15:17 COT
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -106,8 +106,10 @@ CREATE TABLE examenes (
     idcurso                      INTEGER NOT NULL,
     cantidadpreguntasxestudiante INTEGER NOT NULL,
     idtema                       INTEGER NOT NULL,
-    horainicio                   DATE,
-    horafin                      DATE
+    horainicio                   DATE NOT NULL,
+    horafin                      DATE NOT NULL,
+    notaparaaprobar              NUMBER NOT NULL,
+    estado                       VARCHAR2(10) NOT NULL
 );
 
 ALTER TABLE examenes ADD CONSTRAINT examenes_pk PRIMARY KEY ( idexamenen );

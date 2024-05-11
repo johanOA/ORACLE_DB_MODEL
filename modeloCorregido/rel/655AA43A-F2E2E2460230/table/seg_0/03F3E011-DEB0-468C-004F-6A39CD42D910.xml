@@ -117,7 +117,6 @@
 <createdBy>user</createdBy>
 <createdTime>2024-05-10 00:55:00 UTC</createdTime>
 <ownerDesignName>modeloCorregido</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -128,11 +127,31 @@
 <createdBy>user</createdBy>
 <createdTime>2024-05-10 00:55:13 UTC</createdTime>
 <ownerDesignName>modeloCorregido</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="notaParaAprobar" id="1FDD3B0E-8C0B-A3BC-3AF6-B66D52F432EE">
+<createdBy>user</createdBy>
+<createdTime>2024-05-11 17:14:51 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado" id="D4611DC1-45AB-828D-345F-D92DF2CE7D79">
+<createdBy>user</createdBy>
+<createdTime>2024-05-11 17:15:04 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
