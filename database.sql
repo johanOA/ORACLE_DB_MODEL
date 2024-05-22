@@ -1,6 +1,11 @@
 --------------------------------------------------------
--- Archivo creado  - sábado-mayo-11-2024   
+-- Archivo creado  - martes-mayo-21-2024   
 --------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Sequence EXAMENES_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "EDUQUIZ"."EXAMENES_SEQ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 61 CACHE 20 NOORDER  NOCYCLE ;
 --------------------------------------------------------
 --  DDL for Table ASIGNACIONES_ESTUDIANTES
 --------------------------------------------------------
@@ -702,6 +707,7 @@ Insert into EDUQUIZ.EXAMENES (IDEXAMENEN,TITULO,FECHA,DURACIONEXAMEN,CANTIDADPRE
 Insert into EDUQUIZ.EXAMENES (IDEXAMENEN,TITULO,FECHA,DURACIONEXAMEN,CANTIDADPREGUNTAS,CALIFICACION,IDCURSO,CANTIDADPREGUNTASPOREXAMEN,IDTEMA,HORAINICIO,HORAFIN,NOTAPARAAPROBAR,ESTADO) values ('33','Greetings and Introductions in English: Navigating Social Interactions',to_date('01/04/24','DD/MM/RR'),'110','1','5','8','1','33',to_date('09/05/24','DD/MM/RR'),to_date('09/05/24','DD/MM/RR'),'3','Publicado');
 Insert into EDUQUIZ.EXAMENES (IDEXAMENEN,TITULO,FECHA,DURACIONEXAMEN,CANTIDADPREGUNTAS,CALIFICACION,IDCURSO,CANTIDADPREGUNTASPOREXAMEN,IDTEMA,HORAINICIO,HORAFIN,NOTAPARAAPROBAR,ESTADO) values ('37','Conversational Practice in Everyday Situations: Building Fluency',to_date('01/04/24','DD/MM/RR'),'110','1','5','8','1','37',to_date('09/05/24','DD/MM/RR'),to_date('09/05/24','DD/MM/RR'),'3','Publicado');
 Insert into EDUQUIZ.EXAMENES (IDEXAMENEN,TITULO,FECHA,DURACIONEXAMEN,CANTIDADPREGUNTAS,CALIFICACION,IDCURSO,CANTIDADPREGUNTASPOREXAMEN,IDTEMA,HORAINICIO,HORAFIN,NOTAPARAAPROBAR,ESTADO) values ('39','Breathing Techniques in Swimming: Achieving Efficiency and Performance',to_date('01/04/24','DD/MM/RR'),'90','1','5','8','1','39',to_date('09/05/24','DD/MM/RR'),to_date('09/05/24','DD/MM/RR'),'3','Publicado');
+Insert into EDUQUIZ.EXAMENES (IDEXAMENEN,TITULO,FECHA,DURACIONEXAMEN,CANTIDADPREGUNTAS,CALIFICACION,IDCURSO,CANTIDADPREGUNTASPOREXAMEN,IDTEMA,HORAINICIO,HORAFIN,NOTAPARAAPROBAR,ESTADO) values ('41','prueba',to_date('22/05/24','DD/MM/RR'),'60','10','5','2','5','2',to_date('01/01/70','DD/MM/RR'),to_date('01/01/70','DD/MM/RR'),'3','Borrador');
 REM INSERTING into EDUQUIZ.INSTITUCIONES
 SET DEFINE OFF;
 Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('1','Universidad Nacional','Universidad pública de prestigio','Avenida Principal 123','3145551234');
