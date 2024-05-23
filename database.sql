@@ -1,11 +1,26 @@
 --------------------------------------------------------
--- Archivo creado  - martes-mayo-21-2024   
+-- Archivo creado  - jueves-mayo-23-2024   
 --------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Sequence BANCOPREGUNTA_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "EDUQUIZ"."BANCOPREGUNTA_SEQ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 66 CACHE 20 NOORDER  NOCYCLE ;
 --------------------------------------------------------
 --  DDL for Sequence EXAMENES_SEQ
 --------------------------------------------------------
 
    CREATE SEQUENCE  "EDUQUIZ"."EXAMENES_SEQ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 61 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence PREGUNTA_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "EDUQUIZ"."PREGUNTA_SEQ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 66 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence RESPUESTA_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "EDUQUIZ"."RESPUESTA_SEQ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 156 CACHE 20 NOORDER  NOCYCLE ;
 --------------------------------------------------------
 --  DDL for Table ASIGNACIONES_ESTUDIANTES
 --------------------------------------------------------
@@ -199,7 +214,8 @@
 	"ENUNCIADO" VARCHAR2(100 BYTE), 
 	"IDTEMA" NUMBER(*,0), 
 	"IDESTADO" NUMBER(*,0), 
-	"IDTIPOPREGUNTA" NUMBER(*,0)
+	"IDTIPOPREGUNTA" NUMBER(*,0), 
+	"PESO" FLOAT(126)
    ) SEGMENT CREATION IMMEDIATE 
   PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
   STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
@@ -409,6 +425,12 @@ Insert into EDUQUIZ.BANCOPREGUNTAS (IDBANCO,PREGUNTAS_IDPREGUNTA,EXAMENES_IDEXAM
 Insert into EDUQUIZ.BANCOPREGUNTAS (IDBANCO,PREGUNTAS_IDPREGUNTA,EXAMENES_IDEXAMENEN) values ('43','43','18');
 Insert into EDUQUIZ.BANCOPREGUNTAS (IDBANCO,PREGUNTAS_IDPREGUNTA,EXAMENES_IDEXAMENEN) values ('44','44','24');
 Insert into EDUQUIZ.BANCOPREGUNTAS (IDBANCO,PREGUNTAS_IDPREGUNTA,EXAMENES_IDEXAMENEN) values ('45','45','31');
+Insert into EDUQUIZ.BANCOPREGUNTAS (IDBANCO,PREGUNTAS_IDPREGUNTA,EXAMENES_IDEXAMENEN) values ('52','3','48');
+Insert into EDUQUIZ.BANCOPREGUNTAS (IDBANCO,PREGUNTAS_IDPREGUNTA,EXAMENES_IDEXAMENEN) values ('53','49','48');
+Insert into EDUQUIZ.BANCOPREGUNTAS (IDBANCO,PREGUNTAS_IDPREGUNTA,EXAMENES_IDEXAMENEN) values ('54','3','50');
+Insert into EDUQUIZ.BANCOPREGUNTAS (IDBANCO,PREGUNTAS_IDPREGUNTA,EXAMENES_IDEXAMENEN) values ('55','50','50');
+Insert into EDUQUIZ.BANCOPREGUNTAS (IDBANCO,PREGUNTAS_IDPREGUNTA,EXAMENES_IDEXAMENEN) values ('57','51','54');
+Insert into EDUQUIZ.BANCOPREGUNTAS (IDBANCO,PREGUNTAS_IDPREGUNTA,EXAMENES_IDEXAMENEN) values ('56','3','54');
 REM INSERTING into EDUQUIZ.CONTENIDOS
 SET DEFINE OFF;
 Insert into EDUQUIZ.CONTENIDOS (IDCONTENIDO,DESCRICONTENIDO,IDUNIDAD) values ('1','Introducción al tema - Contenido 1','1');
@@ -707,7 +729,9 @@ Insert into EDUQUIZ.EXAMENES (IDEXAMENEN,TITULO,FECHA,DURACIONEXAMEN,CANTIDADPRE
 Insert into EDUQUIZ.EXAMENES (IDEXAMENEN,TITULO,FECHA,DURACIONEXAMEN,CANTIDADPREGUNTAS,CALIFICACION,IDCURSO,CANTIDADPREGUNTASPOREXAMEN,IDTEMA,HORAINICIO,HORAFIN,NOTAPARAAPROBAR,ESTADO) values ('33','Greetings and Introductions in English: Navigating Social Interactions',to_date('01/04/24','DD/MM/RR'),'110','1','5','8','1','33',to_date('09/05/24','DD/MM/RR'),to_date('09/05/24','DD/MM/RR'),'3','Publicado');
 Insert into EDUQUIZ.EXAMENES (IDEXAMENEN,TITULO,FECHA,DURACIONEXAMEN,CANTIDADPREGUNTAS,CALIFICACION,IDCURSO,CANTIDADPREGUNTASPOREXAMEN,IDTEMA,HORAINICIO,HORAFIN,NOTAPARAAPROBAR,ESTADO) values ('37','Conversational Practice in Everyday Situations: Building Fluency',to_date('01/04/24','DD/MM/RR'),'110','1','5','8','1','37',to_date('09/05/24','DD/MM/RR'),to_date('09/05/24','DD/MM/RR'),'3','Publicado');
 Insert into EDUQUIZ.EXAMENES (IDEXAMENEN,TITULO,FECHA,DURACIONEXAMEN,CANTIDADPREGUNTAS,CALIFICACION,IDCURSO,CANTIDADPREGUNTASPOREXAMEN,IDTEMA,HORAINICIO,HORAFIN,NOTAPARAAPROBAR,ESTADO) values ('39','Breathing Techniques in Swimming: Achieving Efficiency and Performance',to_date('01/04/24','DD/MM/RR'),'90','1','5','8','1','39',to_date('09/05/24','DD/MM/RR'),to_date('09/05/24','DD/MM/RR'),'3','Publicado');
-Insert into EDUQUIZ.EXAMENES (IDEXAMENEN,TITULO,FECHA,DURACIONEXAMEN,CANTIDADPREGUNTAS,CALIFICACION,IDCURSO,CANTIDADPREGUNTASPOREXAMEN,IDTEMA,HORAINICIO,HORAFIN,NOTAPARAAPROBAR,ESTADO) values ('41','prueba',to_date('22/05/24','DD/MM/RR'),'60','10','5','2','5','2',to_date('01/01/70','DD/MM/RR'),to_date('01/01/70','DD/MM/RR'),'3','Borrador');
+Insert into EDUQUIZ.EXAMENES (IDEXAMENEN,TITULO,FECHA,DURACIONEXAMEN,CANTIDADPREGUNTAS,CALIFICACION,IDCURSO,CANTIDADPREGUNTASPOREXAMEN,IDTEMA,HORAINICIO,HORAFIN,NOTAPARAAPROBAR,ESTADO) values ('48','prueba3',to_date('22/05/24','DD/MM/RR'),'60','10','5','2','5','2',to_date('01/01/70','DD/MM/RR'),to_date('01/01/70','DD/MM/RR'),'3','Borrador');
+Insert into EDUQUIZ.EXAMENES (IDEXAMENEN,TITULO,FECHA,DURACIONEXAMEN,CANTIDADPREGUNTAS,CALIFICACION,IDCURSO,CANTIDADPREGUNTASPOREXAMEN,IDTEMA,HORAINICIO,HORAFIN,NOTAPARAAPROBAR,ESTADO) values ('50','prueba4',to_date('23/05/24','DD/MM/RR'),'60','10','5','2','5','2',to_date('01/01/70','DD/MM/RR'),to_date('01/01/70','DD/MM/RR'),'3','Publicado');
+Insert into EDUQUIZ.EXAMENES (IDEXAMENEN,TITULO,FECHA,DURACIONEXAMEN,CANTIDADPREGUNTAS,CALIFICACION,IDCURSO,CANTIDADPREGUNTASPOREXAMEN,IDTEMA,HORAINICIO,HORAFIN,NOTAPARAAPROBAR,ESTADO) values ('54','prueba5',to_date('22/05/24','DD/MM/RR'),'60','5','5','2','5','2',to_date('01/01/70','DD/MM/RR'),to_date('01/01/70','DD/MM/RR'),'3','Borrador');
 REM INSERTING into EDUQUIZ.INSTITUCIONES
 SET DEFINE OFF;
 Insert into EDUQUIZ.INSTITUCIONES (IDINSTITUCION,NOMBRENINSTITUCION,DESCRIPCION,DIRECCION,TELEFONO) values ('1','Universidad Nacional','Universidad pública de prestigio','Avenida Principal 123','3145551234');
@@ -794,51 +818,54 @@ Insert into EDUQUIZ.MATERIAS (IDMATERIA,NOMBRE,DESCRIPCION) values ('39','Comuni
 Insert into EDUQUIZ.MATERIAS (IDMATERIA,NOMBRE,DESCRIPCION) values ('40','Periodismo','Recolección y difusión de noticias e información');
 REM INSERTING into EDUQUIZ.PREGUNTAS
 SET DEFINE OFF;
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('1','¿Cuál es la obra cumbre de Cervantes?','4','1','2');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('5','Empareja las obras con sus autores:','5','1','5');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('7','¿Cuáles son las tres leyes de Newton?','7','1','1');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('11','¿Cuáles son los tipos de energía?','11','1','1');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('2','¿Cuáles son los autores representativos del Modernismo?','2','1','1');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('3','¿Verdadero o falso? El Mio Cid es una obra anónima.','3','1','3');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('4','Ordena los siguientes autores del Siglo de Oro:','4','1','4');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('6','Complete: La _____ es el cambio de posición de un cuerpo.','6','1','6');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('8','¿Verdadero o falso? Un cuerpo en reposo tiende a permanecer así.','8','1','3');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('9','Ordena las leyes de Newton de menor a mayor importancia:','9','1','4');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('10','Complete: El _____ es el producto de la fuerza por el desplazamiento.','10','1','6');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('12','¿Verdadero o falso? Los alcanos son compuestos cíclicos.','12','1','3');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('13','Empareja los compuestos con sus grupos funcionales:','13','1','5');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('14','Ordena las reacciones orgánicas de acuerdo a su mecanismo:','14','1','4');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('15','Complete: El mecanismo de una reacción describe su _____.','15','1','6');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('16','¿Cuáles son las funciones de la membrana celular?','16','1','1');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('17','¿Verdadero o falso? El núcleo es un organelo celular.','17','1','3');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('18','Empareja los organelos con sus funciones:','18','1','5');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('19','Ordena los siguientes organelos citoplasmáticos:','19','1','4');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('20','Complete: El _____ es el proceso de síntesis de moléculas.','20','1','6');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('21','¿Cuáles son los mecanismos de comunicación celular?','21','1','1');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('22','¿Verdadero o falso? La civilización sumeria fue la primera en desarrollar la escritura.','22','1','3');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('23','Ordena las siguientes civilizaciones de la antigüedad de mayor a menor antigüedad:','22','1','4');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('24','¿Cuáles fueron los aportes de la civilización griega?','25','1','1');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('25','¿Verdadero o falso? Los faraones fueron gobernantes de la civilización egipcia.','24','1','3');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('26','Empareja las dinastías chinas con sus períodos:','26','1','5');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('27','Complete: El _____ fue un sistema de gobierno feudal en Japón.','27','1','6');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('28','¿Cuáles son las principales placas tectónicas?','28','1','1');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('29','¿Verdadero o falso? La altitud es un factor que influye en el clima.','29','1','3');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('30','Ordena las siguientes formas de relieve de origen endógeno:','30','1','4');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('31','Empareja los agentes exógenos con las formas de relieve que producen:','31','1','5');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('32','Complete: La _____ es el movimiento del aire en la atmósfera.','32','1','6');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('33','¿Cuáles son las formas adecuadas de saludar en inglés?','33','1','1');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('34','¿Verdadero o falso? En inglés, los números se escriben igual que en español.','34','1','3');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('35','Ordena los siguientes tiempos verbales en inglés:','35','1','4');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('36','Empareja las oraciones con su estructura sintáctica:','36','1','5');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('37','Complete: "How are you?" es una frase utilizada para _____','37','1','6');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('38','¿Cuáles son los acentos más comunes en inglés?','38','1','1');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('39','¿Verdadero o falso? La respiración en natación se realiza únicamente por la boca.','39','1','3');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('40','Ordena los siguientes estilos de natación:','40','1','4');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('41','¿Cuál es el autor de "La Celestina"?','4','1','2');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('42','¿Qué tipo de enlace predomina en los compuestos orgánicos?','14','1','2');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('43','¿Qué organelo celular es responsable de la síntesis de proteínas?','18','1','2');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('44','¿Qué civilización antigua desarrolló la escritura cuneiforme?','24','1','2');
-Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA) values ('45','¿Cuál es el agente exógeno que modela las formas de relieve mediante la erosión eólica?','31','1','2');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('1','¿Cuál es la obra cumbre de Cervantes?','4','1','2','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('5','Empareja las obras con sus autores:','5','1','5','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('7','¿Cuáles son las tres leyes de Newton?','7','1','1','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('11','¿Cuáles son los tipos de energía?','11','1','1','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('2','¿Cuáles son los autores representativos del Modernismo?','2','1','1','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('3','¿Verdadero o falso? El Mio Cid es una obra anónima.','3','1','3','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('4','Ordena los siguientes autores del Siglo de Oro:','4','1','4','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('6','Complete: La _____ es el cambio de posición de un cuerpo.','6','1','6','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('8','¿Verdadero o falso? Un cuerpo en reposo tiende a permanecer así.','8','1','3','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('9','Ordena las leyes de Newton de menor a mayor importancia:','9','1','4','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('10','Complete: El _____ es el producto de la fuerza por el desplazamiento.','10','1','6','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('12','¿Verdadero o falso? Los alcanos son compuestos cíclicos.','12','1','3','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('13','Empareja los compuestos con sus grupos funcionales:','13','1','5','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('14','Ordena las reacciones orgánicas de acuerdo a su mecanismo:','14','1','4','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('15','Complete: El mecanismo de una reacción describe su _____.','15','1','6','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('16','¿Cuáles son las funciones de la membrana celular?','16','1','1','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('17','¿Verdadero o falso? El núcleo es un organelo celular.','17','1','3','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('18','Empareja los organelos con sus funciones:','18','1','5','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('19','Ordena los siguientes organelos citoplasmáticos:','19','1','4','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('20','Complete: El _____ es el proceso de síntesis de moléculas.','20','1','6','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('21','¿Cuáles son los mecanismos de comunicación celular?','21','1','1','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('22','¿Verdadero o falso? La civilización sumeria fue la primera en desarrollar la escritura.','22','1','3','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('23','Ordena las siguientes civilizaciones de la antigüedad de mayor a menor antigüedad:','22','1','4','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('24','¿Cuáles fueron los aportes de la civilización griega?','25','1','1','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('25','¿Verdadero o falso? Los faraones fueron gobernantes de la civilización egipcia.','24','1','3','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('26','Empareja las dinastías chinas con sus períodos:','26','1','5','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('27','Complete: El _____ fue un sistema de gobierno feudal en Japón.','27','1','6','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('28','¿Cuáles son las principales placas tectónicas?','28','1','1','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('29','¿Verdadero o falso? La altitud es un factor que influye en el clima.','29','1','3','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('30','Ordena las siguientes formas de relieve de origen endógeno:','30','1','4','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('31','Empareja los agentes exógenos con las formas de relieve que producen:','31','1','5','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('32','Complete: La _____ es el movimiento del aire en la atmósfera.','32','1','6','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('33','¿Cuáles son las formas adecuadas de saludar en inglés?','33','1','1','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('34','¿Verdadero o falso? En inglés, los números se escriben igual que en español.','34','1','3','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('35','Ordena los siguientes tiempos verbales en inglés:','35','1','4','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('36','Empareja las oraciones con su estructura sintáctica:','36','1','5','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('37','Complete: "How are you?" es una frase utilizada para _____','37','1','6','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('38','¿Cuáles son los acentos más comunes en inglés?','38','1','1','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('39','¿Verdadero o falso? La respiración en natación se realiza únicamente por la boca.','39','1','3','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('40','Ordena los siguientes estilos de natación:','40','1','4','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('41','¿Cuál es el autor de "La Celestina"?','4','1','2','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('42','¿Qué tipo de enlace predomina en los compuestos orgánicos?','14','1','2','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('43','¿Qué organelo celular es responsable de la síntesis de proteínas?','18','1','2','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('44','¿Qué civilización antigua desarrolló la escritura cuneiforme?','24','1','2','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('45','¿Cuál es el agente exógeno que modela las formas de relieve mediante la erosión eólica?','31','1','2','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('49','La literatura española es...','2','2','2','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('50','La literatura española es...','2','2','2','50');
+Insert into EDUQUIZ.PREGUNTAS (IDPREGUNTA,ENUNCIADO,IDTEMA,IDESTADO,IDTIPOPREGUNTA,PESO) values ('51','La literatura española es...','2','2','2','50');
 REM INSERTING into EDUQUIZ.RESPUESTAS
 SET DEFINE OFF;
 Insert into EDUQUIZ.RESPUESTAS (IDRESPUESTA,OPCIONRESPUESTA,CORRECTA,IDPREGUNTAS) values ('1','El Quijote','Verdadera','1');
@@ -956,6 +983,18 @@ Insert into EDUQUIZ.RESPUESTAS (IDRESPUESTA,OPCIONRESPUESTA,CORRECTA,IDPREGUNTAS
 Insert into EDUQUIZ.RESPUESTAS (IDRESPUESTA,OPCIONRESPUESTA,CORRECTA,IDPREGUNTAS) values ('113','Fernando de Rojas','Verdadera','41');
 Insert into EDUQUIZ.RESPUESTAS (IDRESPUESTA,OPCIONRESPUESTA,CORRECTA,IDPREGUNTAS) values ('114','Lope de Vega','Incorrecta','41');
 Insert into EDUQUIZ.RESPUESTAS (IDRESPUESTA,OPCIONRESPUESTA,CORRECTA,IDPREGUNTAS) values ('115','Miguel de Cervantes','Incorrecta','41');
+Insert into EDUQUIZ.RESPUESTAS (IDRESPUESTA,OPCIONRESPUESTA,CORRECTA,IDPREGUNTAS) values ('130','Americana','Incorrecta','49');
+Insert into EDUQUIZ.RESPUESTAS (IDRESPUESTA,OPCIONRESPUESTA,CORRECTA,IDPREGUNTAS) values ('131','India','Incorrecta','49');
+Insert into EDUQUIZ.RESPUESTAS (IDRESPUESTA,OPCIONRESPUESTA,CORRECTA,IDPREGUNTAS) values ('128','Portuguesa','Incorrecta','49');
+Insert into EDUQUIZ.RESPUESTAS (IDRESPUESTA,OPCIONRESPUESTA,CORRECTA,IDPREGUNTAS) values ('129','Española','Correcta','49');
+Insert into EDUQUIZ.RESPUESTAS (IDRESPUESTA,OPCIONRESPUESTA,CORRECTA,IDPREGUNTAS) values ('132','Portuguesa','Incorrecta','50');
+Insert into EDUQUIZ.RESPUESTAS (IDRESPUESTA,OPCIONRESPUESTA,CORRECTA,IDPREGUNTAS) values ('133','Española','Correcta','50');
+Insert into EDUQUIZ.RESPUESTAS (IDRESPUESTA,OPCIONRESPUESTA,CORRECTA,IDPREGUNTAS) values ('134','Americana','Incorrecta','50');
+Insert into EDUQUIZ.RESPUESTAS (IDRESPUESTA,OPCIONRESPUESTA,CORRECTA,IDPREGUNTAS) values ('135','India','Incorrecta','50');
+Insert into EDUQUIZ.RESPUESTAS (IDRESPUESTA,OPCIONRESPUESTA,CORRECTA,IDPREGUNTAS) values ('138','Americana','Incorrecta','51');
+Insert into EDUQUIZ.RESPUESTAS (IDRESPUESTA,OPCIONRESPUESTA,CORRECTA,IDPREGUNTAS) values ('139','India','Incorrecta','51');
+Insert into EDUQUIZ.RESPUESTAS (IDRESPUESTA,OPCIONRESPUESTA,CORRECTA,IDPREGUNTAS) values ('136','Portuguesa','Incorrecta','51');
+Insert into EDUQUIZ.RESPUESTAS (IDRESPUESTA,OPCIONRESPUESTA,CORRECTA,IDPREGUNTAS) values ('137','Española','Correcta','51');
 REM INSERTING into EDUQUIZ.RESPUESTAS_ESTUDIANTES
 SET DEFINE OFF;
 Insert into EDUQUIZ.RESPUESTAS_ESTUDIANTES (IDRESPUESTAESTUDIANTE,IDRESPUESTA,IDASIGNACIONPREGUNTA,RESPUESTA) values ('1','1','1','""');
@@ -1313,6 +1352,228 @@ Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERI
   PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
   TABLESPACE "TS_INDEX" ;
 --------------------------------------------------------
+--  DDL for Trigger ELIMINAR_BANCO
+--------------------------------------------------------
+
+  CREATE OR REPLACE TRIGGER "EDUQUIZ"."ELIMINAR_BANCO" 
+BEFORE DELETE ON BANCOPREGUNTAS
+FOR EACH ROW
+BEGIN
+
+    DELETE FROM PREGUNTAS
+    WHERE idpregunta = :OLD.PREGUNTAS_IDPREGUNTA AND idestado = 2;
+
+END;
+/
+ALTER TRIGGER "EDUQUIZ"."ELIMINAR_BANCO" ENABLE;
+--------------------------------------------------------
+--  DDL for Trigger ELIMINAR_EXAMEN
+--------------------------------------------------------
+
+  CREATE OR REPLACE TRIGGER "EDUQUIZ"."ELIMINAR_EXAMEN" 
+BEFORE DELETE ON EXAMENES
+FOR EACH ROW
+BEGIN
+
+    IF(:OLD.ESTADO = 'Publicado') THEN
+        RAISE_APPLICATION_ERROR(-20007, 'Error al eliminar un examen, no se puede eliminar un examen que ya ha sido publicado.');
+    END IF;
+
+    DELETE FROM bancopreguntas
+    WHERE examenes_idexamenen = :OLD.IDEXAMENEN;
+
+END;
+
+--ELIMINA LAS PREGUNTAS DE UN BANCO ANTES DE ELIMINAR EL BANCO
+CREATE  OR REPLACE TRIGGER  eliminar_banco
+BEFORE DELETE ON BANCOPREGUNTAS
+FOR EACH ROW
+BEGIN
+
+    DELETE FROM PREGUNTAS
+    WHERE IDPREGUNTA = :OLD.PREGUNTAS_IDPREGUNTA AND idestado = 2;
+
+END;
+
+--ELIMINA LAS RESPUESTAS DE UNA PREGUNTA ANTES DE ELIMINARLA
+CREATE OR REPLACE TRIGGER  eliminar_pregunta
+BEFORE DELETE ON PREGUNTAS
+FOR EACH ROW
+BEGIN
+
+    DELETE FROM RESPUESTAS
+    WHERE IDPREGUNTAS = :OLD.IDPREGUNTA;
+
+END;
+
+--VALIDA QUE LA HORA INICIO SEA MENOR QUE LA HORA FINAL
+CREATE OR REPLACE TRIGGER  VALIDAR_HORAS_EXAMEN
+BEFORE INSERT OR UPDATE ON EXAMENES
+FOR EACH ROW
+BEGIN
+
+    IF(:NEW.HORAFIN < :NEW.HORAINICIO) THEN
+        RAISE_APPLICATION_ERROR(-20100, 'Error al crear examen, la horainicio es mayor que la horafin');
+    END IF;
+
+END;
+
+--VALIDA QUE LAS CANTIDADES DEL EXAMEN, COMO LA DE PREGUNTAS O DURACION, NO SEAN NEGATIVAS NI QUE CANTIDAD PREGUNTAS SEA MENOR A LA CANTIDAD PREGUNTAS POR EXAMEN
+CREATE OR REPLACE TRIGGER  VALIDAR_CANTIDADES_EXAMEN
+BEFORE INSERT OR UPDATE ON EXAMENES
+FOR EACH ROW
+BEGIN
+
+    IF(:NEW.DURACIONEXAMEN <= 0 ) THEN
+        RAISE_APPLICATION_ERROR(-20000, 'Error al crear examen, cantidad negativa o igual a cero en la duracion del examen.');
+    END IF;
+
+    IF(:NEW.CANTIDADPREGUNTAS <= 0 ) THEN
+        RAISE_APPLICATION_ERROR(-20001, 'Error al crear examen, cantidad negativa o igual a cero en la cantidadpreguntas del examen.');
+    END IF;
+
+    IF(:NEW.CANTIDADPREGUNTASPOREXAMEN <= 0 ) THEN
+        RAISE_APPLICATION_ERROR(-20002, 'Error al crear examen, cantidad negativa o igual a cero en la cantidadpreguntasporexamen del examen.');
+    END IF;   
+
+    IF(:NEW.CALIFICACION <= 0 ) THEN
+        RAISE_APPLICATION_ERROR(-20003, 'Error al crear examen, cantidad negativa o igual a cero en la calificacion del examen.');
+    END IF; 
+
+    IF(:NEW.NOTAPARAAPROBAR <= 0 ) THEN
+        RAISE_APPLICATION_ERROR(-20004, 'Error al crear examen, cantidad negativa o igual a cero en la nota para aprobar del examen.');
+    END IF; 
+
+    IF(:NEW.CANTIDADPREGUNTAS < :NEW.CANTIDADPREGUNTASPOREXAMEN) THEN
+        RAISE_APPLICATION_ERROR(-20005, 'Error al crear examen, la cantidad de preguntas por examen no puede ser mayor a la cantidad de preguntas del parcial');
+    END IF;
+
+    IF(:NEW.CALIFICACION < :NEW.NOTAPARAAPROBAR) THEN
+        RAISE_APPLICATION_ERROR(-20006, 'Error al crear examen, la calificacion no puede ser menor a la nota para aprobar');
+    END IF;
+
+END;
+
+CREATE OR REPLACE TRIGGER VALIDAR_FECHA_EXAMEN
+BEFORE UPDATE OF ESTADO ON EXAMENES
+FOR EACH ROW
+BEGIN
+    IF(:NEW.FECHA < SYSDATE) THEN
+        RAISE_APPLICATION_ERROR(-20008, ' Error al publicar el examen, no puede publicar un examen con fecha anterior a la actual.');
+    END IF;
+END;
+
+CREATE OR REPLACE TRIGGER VALIDAR_EXAMEN_BORRADOR
+BEFORE UPDATE ON EXAMENES
+FOR EACH ROW
+BEGIN
+    IF(:OLD.ESTADO <> 'Borrador') THEN
+        RAISE_APPLICATION_ERROR(-20009, ' Error al editar el examen, no puede editar un examen que no sea un borrador.');
+    END IF;
+END;
+
+/
+ALTER TRIGGER "EDUQUIZ"."ELIMINAR_EXAMEN" ENABLE;
+--------------------------------------------------------
+--  DDL for Trigger ELIMINAR_PREGUNTA
+--------------------------------------------------------
+
+  CREATE OR REPLACE TRIGGER "EDUQUIZ"."ELIMINAR_PREGUNTA" 
+BEFORE DELETE ON PREGUNTAS
+FOR EACH ROW
+BEGIN
+
+    DELETE FROM RESPUESTAS
+    WHERE IDPREGUNTAS = :OLD.IDPREGUNTA;
+
+END;
+/
+ALTER TRIGGER "EDUQUIZ"."ELIMINAR_PREGUNTA" ENABLE;
+--------------------------------------------------------
+--  DDL for Trigger VALIDAR_CANTIDADES_EXAMEN
+--------------------------------------------------------
+
+  CREATE OR REPLACE TRIGGER "EDUQUIZ"."VALIDAR_CANTIDADES_EXAMEN" 
+BEFORE INSERT OR UPDATE ON EXAMENES
+FOR EACH ROW
+BEGIN
+
+    IF(:NEW.DURACIONEXAMEN <= 0 ) THEN
+        RAISE_APPLICATION_ERROR(-20000, 'Error al crear examen, cantidad negativa o igual a cero en la duracion del examen.');
+    END IF;
+
+    IF(:NEW.CANTIDADPREGUNTAS <= 0 ) THEN
+        RAISE_APPLICATION_ERROR(-20001, 'Error al crear examen, cantidad negativa o igual a cero en la cantidadpreguntas del examen.');
+    END IF;
+
+    IF(:NEW.CANTIDADPREGUNTASPOREXAMEN <= 0 ) THEN
+        RAISE_APPLICATION_ERROR(-20002, 'Error al crear examen, cantidad negativa o igual a cero en la cantidadpreguntasporexamen del examen.');
+    END IF;   
+
+    IF(:NEW.CALIFICACION <= 0 ) THEN
+        RAISE_APPLICATION_ERROR(-20003, 'Error al crear examen, cantidad negativa o igual a cero en la calificacion del examen.');
+    END IF; 
+
+    IF(:NEW.NOTAPARAAPROBAR <= 0 ) THEN
+        RAISE_APPLICATION_ERROR(-20004, 'Error al crear examen, cantidad negativa o igual a cero en la nota para aprobar del examen.');
+    END IF; 
+
+    IF(:NEW.CANTIDADPREGUNTAS < :NEW.CANTIDADPREGUNTASPOREXAMEN) THEN
+        RAISE_APPLICATION_ERROR(-20005, 'Error al crear examen, la cantidad de preguntas por examen no puede ser mayor a la cantidad de preguntas del parcial');
+    END IF;
+
+    IF(:NEW.CALIFICACION < :NEW.NOTAPARAAPROBAR) THEN
+        RAISE_APPLICATION_ERROR(-20006, 'Error al crear examen, la calificacion no puede ser menor a la nota para aprobar');
+    END IF;
+
+END;
+/
+ALTER TRIGGER "EDUQUIZ"."VALIDAR_CANTIDADES_EXAMEN" ENABLE;
+--------------------------------------------------------
+--  DDL for Trigger VALIDAR_EXAMEN_BORRADOR
+--------------------------------------------------------
+
+  CREATE OR REPLACE TRIGGER "EDUQUIZ"."VALIDAR_EXAMEN_BORRADOR" 
+BEFORE UPDATE ON EXAMENES
+FOR EACH ROW
+BEGIN
+    IF(:OLD.ESTADO <> 'Borrador') THEN
+        RAISE_APPLICATION_ERROR(-20009, ' Error al editar el examen, no puede editar un examen que no sea un borrador.');
+    END IF;
+END;
+/
+ALTER TRIGGER "EDUQUIZ"."VALIDAR_EXAMEN_BORRADOR" ENABLE;
+--------------------------------------------------------
+--  DDL for Trigger VALIDAR_FECHA_EXAMEN
+--------------------------------------------------------
+
+  CREATE OR REPLACE TRIGGER "EDUQUIZ"."VALIDAR_FECHA_EXAMEN" 
+BEFORE UPDATE OF ESTADO ON EXAMENES
+FOR EACH ROW
+BEGIN
+    IF(:NEW.FECHA < SYSDATE) THEN
+        RAISE_APPLICATION_ERROR(-20008, ' Error al publicar el examen, no puede publicar un examen con fecha anterior a la actual.');
+    END IF;
+END;
+/
+ALTER TRIGGER "EDUQUIZ"."VALIDAR_FECHA_EXAMEN" ENABLE;
+--------------------------------------------------------
+--  DDL for Trigger VALIDAR_HORAS_EXAMEN
+--------------------------------------------------------
+
+  CREATE OR REPLACE TRIGGER "EDUQUIZ"."VALIDAR_HORAS_EXAMEN" 
+BEFORE INSERT OR UPDATE ON EXAMENES
+FOR EACH ROW
+BEGIN
+
+    IF(:NEW.HORAFIN < :NEW.HORAINICIO) THEN
+        RAISE_APPLICATION_ERROR(-20100, 'Error al crear examen, la horainicio es mayor que la horafin');
+    END IF;
+
+END;
+/
+ALTER TRIGGER "EDUQUIZ"."VALIDAR_HORAS_EXAMEN" ENABLE;
+--------------------------------------------------------
 --  Constraints for Table ASIGNACIONES_PREGUNTAS
 --------------------------------------------------------
 
@@ -1340,6 +1601,7 @@ Insert into EDUQUIZ.UNIDADESESTUDIO (IDUNIDAD,NOMBRE_UNIDAD,DESCRIPCION,IDMATERI
 --  Constraints for Table PREGUNTAS
 --------------------------------------------------------
 
+  ALTER TABLE "EDUQUIZ"."PREGUNTAS" MODIFY ("PESO" NOT NULL ENABLE);
   ALTER TABLE "EDUQUIZ"."PREGUNTAS" ADD CONSTRAINT "PREGUNTAS_PK" PRIMARY KEY ("IDPREGUNTA")
   USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
   STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645

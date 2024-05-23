@@ -74,6 +74,16 @@
 <colAssociation fkAssociation="97E36714-13DB-1CF5-7CBB-23F97FF62193" referredColumn="231D9F83-58D1-BA8D-6F92-78363B5C87C0"/>
 </associations>
 </Column>
+<Column name="peso" id="14FCBFFC-532B-3CA3-582D-D7CBEF8585ED">
+<createdBy>user</createdBy>
+<createdTime>2024-05-22 15:58:18 UTC</createdTime>
+<ownerDesignName>modeloCorregido</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="8A30806A-4D33-9D90-F932-830860B9B469" name="Preguntas_PK">

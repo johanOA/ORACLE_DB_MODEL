@@ -16,7 +16,7 @@
 <objectViews>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="03F3E011-DEB0-468C-004F-6A39CD42D910" otype="Table" vid="0678BB19-2E58-3F21-976A-9A4C1FFF511F">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1488" y="1297" width="249" height="198"/>
+<bounds x="1488" y="1319" width="249" height="257"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="0EE0BFCE-2C76-36F0-6016-229929103131" otype="Table" vid="52F12176-D8C1-8989-F9FB-EFA0094E588F">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -111,8 +111,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="1235" y="941"/>
-<point x="1530" y="1297"/>
+<point x="1230" y="941"/>
+<point x="1515" y="1319"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="2FA8DD50-20A3-790D-9FD2-016145A03E23" otype="FKIndexAssociation" vid_source="0678BB19-2E58-3F21-976A-9A4C1FFF511F" vid_target="67631DAD-B81D-EB71-B564-0E2AF0C2C78F">
@@ -120,8 +120,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="1488" y="1326"/>
-<point x="1301" y="1326"/>
+<point x="1488" y="1337"/>
+<point x="1301" y="1337"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="304345DB-D5C8-7002-FE67-45A16B95A880" otype="FKIndexAssociation" vid_source="4D7BF901-F471-78FA-8B52-D32F1F673B6D" vid_target="0678BB19-2E58-3F21-976A-9A4C1FFF511F">
@@ -130,7 +130,7 @@
 <lineWidth>1</lineWidth>
 <points>
 <point x="1624" y="612"/>
-<point x="1624" y="1297"/>
+<point x="1624" y="1319"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="4BB35823-85FB-93FA-9A32-C8A2E85B1CBA" otype="FKIndexAssociation" vid_source="B448FA16-F801-06BA-B94E-A791A7B47005" vid_target="E8CEF1C1-2BC2-4C4F-09B5-1D96FCEC74B4">
@@ -228,7 +228,7 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="1727" y="1297"/>
+<point x="1727" y="1319"/>
 <point x="1727" y="833"/>
 </points>
 </Connector>
