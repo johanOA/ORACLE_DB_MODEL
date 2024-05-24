@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 21.2.0.165.1515
---   en:        2024-05-11 12:15:17 COT
+--   en:        2024-05-24 01:37:37 COT
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -137,7 +137,8 @@ CREATE TABLE preguntas (
     enunciado      VARCHAR2(100 BYTE) NOT NULL,
     idtema         INTEGER NOT NULL,
     idestado       INTEGER NOT NULL,
-    idtipopregunta INTEGER NOT NULL
+    idtipopregunta INTEGER NOT NULL,
+    peso           FLOAT NOT NULL
 );
 
 ALTER TABLE preguntas ADD CONSTRAINT preguntas_pk PRIMARY KEY ( idpregunta );
